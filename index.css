@@ -1,0 +1,106 @@
+body {
+  background-color: #36454f;
+  font-family: "Playwrite CZ", cursive;
+  font-optical-sizing: auto;
+}
+h1 {
+  text-align: center;
+  color: white;
+  font-size: small;
+  margin-bottom: 5px;
+}
+#sokoban {
+  position: relative;
+  width: 10em;
+  height: 10em;
+  margin: 0 auto;
+}
+[data-what] {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-image: url(./images/tileset.png);
+  background-position: 0 0;
+  width: 16px;
+  height: 16px;
+}
+[data-what="worker"] {
+  background-image: url(./images/dudeset.png);
+  background-position: -2px -3px;
+  height: 18px;
+  margin-top: -2px;
+}
+[data-what="crate"] {
+  background-position: 0 -64px;
+}
+[data-what="ground"] {
+  background-position: 0 -16px;
+}
+[data-what="dest"] {
+  background-position: -48px 0;
+}
+[data-what="back-building"] {
+  background-position: 0 0;
+}
+[data-what="building"] {
+  background-position: -32px 0;
+}
+[data-what="ground-water"] {
+  background-position: 0 -32px;
+}
+[data-what="water"] {
+  background-position: 0 -48px;
+}
+[data-x="0"] {
+  left: 0;
+}
+[data-x="1"] {
+  left: 16px;
+}
+[data-x="2"] {
+  left: 32px;
+}
+[data-x="3"] {
+  left: 48px;
+}
+[data-x="4"] {
+  left: 64px;
+}
+[data-x="5"] {
+  left: 80px;
+}
+[data-x="6"] {
+  left: 96px;
+}
+[data-x="7"] {
+  left: 112px;
+}
+[data-x="8"] {
+  left: 138px;
+}
+[data-y="0"] {
+  top: 0;
+}
+[data-y="1"] {
+  top: 16px;
+}
+[data-y="2"] {
+  top: 32px;
+}
+[data-y="3"] {
+  top: 48px;
+}
+[data-y="4"] {
+  top: 64px;
+}
+[data-y="5"] {
+  top: 80px;
+}
+[data-y="6"] {
+  top: 96px;
+}
+[data-y="7"] {
+  top: 112px;
+}
+[data-y="8"] {
+  top: 138px;
+}
