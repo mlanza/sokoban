@@ -11,15 +11,19 @@ h1 {
 }
 #sokoban {
   position: relative;
-  width: 10em;
-  height: 10em;
   margin: 0 auto;
 }
 [data-rows="8"] {
-  max-height: 128px;
+  height: 128px;
 }
 [data-cols="8"] {
-  max-width: 128px;
+  width: 128px;
+}
+[data-rows="10"] {
+  height: 160px;
+}
+[data-cols="15"] {
+  width: 240px;
 }
 [data-what] {
   position: absolute;
@@ -84,8 +88,30 @@ h1 {
   left: 112px;
 }
 [data-x="8"] {
-  left: 138px;
+  left: 128px;
 }
+[data-x="9"] {
+  left: 144px;
+}
+[data-x="10"] {
+  left: 160px;
+}
+[data-x="11"] {
+  left: 176px;
+}
+[data-x="12"] {
+  left: 192px;
+}
+[data-x="13"] {
+  left: 208px;
+}
+[data-x="14"] {
+  left: 224px;
+}
+[data-x="15"] {
+  left: 240px;
+}
+
 [data-y="0"] {
   top: 0;
 }
@@ -111,5 +137,11 @@ h1 {
   top: 112px;
 }
 [data-y="8"] {
-  top: 138px;
+  top: 128px;
+}
+[data-y="9"] {
+  top: 144px;
+}
+[data-y="10"] {
+  top: 160px;
 }
