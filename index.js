@@ -77,6 +77,13 @@ $.sub($hist, function([curr, prior]){
       return div({"data-what": w, "data-x": x, "data-y": y});
     }, _));
 
+    const rows = _.count(fixtures);
+    const cols = _.chain(fixtures, _.first, _.count);
+
+    $.doto(el,
+      dom.attr(_, "data-rows", rows),
+      dom.attr(_, "data-cols", cols));
+
     dom.html(el,
       _.chain(lay,
         _.append(_, _.mapa(function([x, y]){

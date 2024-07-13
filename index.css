@@ -15,6 +15,12 @@ h1 {
   height: 10em;
   margin: 0 auto;
 }
+[data-rows="8"] {
+  max-height: 128px;
+}
+[data-cols="8"] {
+  max-width: 128px;
+}
 [data-what] {
   position: absolute;
   background-repeat: no-repeat;
@@ -31,6 +37,9 @@ h1 {
 }
 [data-what="crate"] {
   background-position: 0 -64px;
+}
+[data-what="void"] {
+  visibility: hidden;
 }
 [data-what="ground"] {
   background-position: 0 -16px;
