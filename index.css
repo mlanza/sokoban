@@ -2,6 +2,8 @@ body {
   background-color: #36454f;
   font-family: "Playwrite CZ", cursive;
   font-optical-sizing: auto;
+  zoom: 3;
+
 }
 h1 {
   text-align: center;
@@ -12,6 +14,28 @@ h1 {
 #sokoban {
   position: relative;
   margin: 0 auto;
+}
+#lvl {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  color: white;
+  font-family: monospace;
+  font-size: 5pt;
+}
+#solved {
+  position: absolute;
+  bottom: 1em;
+  left: 0;
+  height: 1em;
+  width: 100%;
+  font-family: monospace;
+  font-size: 5pt;
+  text-align: center;
+  visibility: hidden;
+}
+.solved #solved {
+  visibility: visible;
 }
 [data-rows="8"] {
   height: 128px;
