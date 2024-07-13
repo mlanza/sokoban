@@ -6,6 +6,21 @@ export const _ = "void";
 export const levels = [];
 
 levels.push({
+  worker: [2,6],
+  crates: [[2,2],[4,2],[3,3],[2,5],[3,5]],
+  fixtures: [
+    [b, b, b, b, b, b, b, _],
+    [b, g, g, g, g, g, b, _],
+    [b, g, g, g, g, g, b, b],
+    [b, g, x, g, x, g, g, b],
+    [b, b, x, x, x, g, b, b],
+    [b, g, g, g, g, g, b, _],
+    [b, g, g, g, g, g, g, b],
+    [b, b, b, b, b, b, b, b],
+  ]
+});
+
+levels.push({
   worker: [9,1],
   crates: [[3,7],[10,7],[12,4]],
   fixtures: [
@@ -19,20 +34,5 @@ levels.push({
     [_, b, g, g, b, g, b, g, b, g, g, g, g, g, b],
     [_, b, g, g, g, g, g, g, g, g, g, g, b, b, b],
     [_, b, b, b, b, b, b, b, b, b, b, b, b, _, _]
-  ]
-});
-
-levels.push({
-  worker: [2,6],
-  crates: [[2,2],[4,2],[3,3],[2,5],[3,5]],
-  fixtures: [
-    [b, b, b, b, b, b, b, _],
-    [b, g, g, g, g, g, b, _],
-    [b, g, g, g, g, g, b, b],
-    [b, g, x, g, x, g, g, b],
-    [b, b, x, x, x, g, b, b],
-    [b, g, g, g, g, g, b, _],
-    [b, g, g, g, g, g, g, b],
-    [b, b, b, b, b, b, b, b],
   ]
 });

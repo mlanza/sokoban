@@ -12,7 +12,12 @@ const params = new URLSearchParams(location.search),
       level = _.maybe(params.get("level"), parseInt, _.add(_, -1)) || 0;
 
 const data = _.get(levels, level);
+const final = !_.get(levels, level + 1);
 const el = dom.sel1("#sokoban");
+const next = dom.sel1("#next");
+const lvl = dom.sel1("#lvl span");
+
+dom.text(lvl, level + 1);
 
 const $state = _.chain(data, s.add({dests}), s.verify, $.atom);
 const $hist = $.hist($state);
@@ -41,12 +46,21 @@ const noRight = $.sub($keys, which("ArrowRight"), function(e){
   e.preventDefault();
   $.swap($state, s.right);
 });
+$.sub($keys, which("Escape"), function(e){
+  e.preventDefault();
+  location.reload(true);
+});
 
 $.sub($solved, _.filter(_.identity), function(){ //kill controls once solved
   noUp();
   noDown();
   noLeft();
   noRight();
+  dom.addClass(document.body, "solved");
+  final || $.sub($keys, which(" "), function(e){
+    e.preventDefault();
+    location.search = `?level=${level + 2}`
+  });
 });
 
 $.sub($hist, function([curr, prior]){
@@ -77,8 +91,8 @@ $.sub($hist, function([curr, prior]){
       return div({"data-what": w, "data-x": x, "data-y": y});
     }, _));
 
-    const rows = _.count(fixtures);
-    const cols = _.chain(fixtures, _.first, _.count);
+    const rows = _.count(fixtures),
+          cols = _.chain(fixtures, _.first, _.count);
 
     $.doto(el,
       dom.attr(_, "data-rows", rows),
