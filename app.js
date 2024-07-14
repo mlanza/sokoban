@@ -87,7 +87,8 @@ $.sub($hist, function([curr, prior]){
     const lay = _.chain(fixtures, s.contents, _.mapa(function({what, coords}){
       const [x, y] = coords;
       const below = s.locate(fixtures, [x, y + 1]);
-      const w = what === "building" ? (below === "building" ? what : "back-building") : what;
+      const above = s.locate(fixtures, [x, y - 1]);
+      const w = what === "building" ? (below === "building" ? what : "back-building") : what === "water" ? (_.includes(["ground", "dest"], above) ? "ground-water" : what) : what;
       return div({"data-what": w, "data-x": x, "data-y": y});
     }, _));
 
