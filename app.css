@@ -3,7 +3,6 @@ body {
   font-family: "Playwrite CZ", cursive;
   font-optical-sizing: auto;
   zoom: 3;
-
 }
 h1 {
   text-align: center;
@@ -41,11 +40,47 @@ h1 {
 [data-rows="8"] {
   height: 128px;
 }
-[data-cols="8"] {
-  width: 128px;
+[data-rows="9"] {
+  height: 144px;
 }
 [data-rows="10"] {
   height: 160px;
+}
+[data-rows="11"] {
+  height: 176px;
+}
+[data-rows="12"] {
+  height: 192px;
+}
+[data-rows="13"] {
+  height: 208px;
+}
+[data-rows="14"] {
+  height: 224px;
+}
+[data-rows="15"] {
+  height: 240px;
+}
+[data-cols="8"] {
+  width: 128px;
+}
+[data-cols="9"] {
+  width: 144px;
+}
+[data-cols="10"] {
+  width: 160px;
+}
+[data-cols="11"] {
+  width: 176px;
+}
+[data-cols="12"] {
+  width: 192px;
+}
+[data-cols="13"] {
+  width: 208px;
+}
+[data-cols="14"] {
+  width: 224px;
 }
 [data-cols="15"] {
   width: 240px;
@@ -170,4 +205,19 @@ h1 {
 }
 [data-y="10"] {
   top: 160px;
+}
+[data-y="11"] {
+  top: 176px;
+}
+[data-y="12"] {
+  top: 192px;
+}
+[data-y="13"] {
+  top: 208px;
+}
+[data-y="14"] {
+  top: 224px;
+}
+[data-y="15"] {
+  top: 240px;
 }
