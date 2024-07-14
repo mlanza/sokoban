@@ -52,11 +52,11 @@ function horizontal(offset, [x, y], state){
   return {what, coords};
 }
 
-function above(offset, coords, state){
+function upward(offset, coords, state){
   return vertical(-offset, coords, state);
 }
 
-const below = vertical;
+const downward = vertical;
 
 function leftward(offset, coords, state){
   return horizontal(-offset, coords, state);
@@ -85,7 +85,7 @@ function move(beyond) {
   }
 }
 
-export const up = move(above);
-export const down = move(below);
+export const up = move(upward);
+export const down = move(downward);
 export const left = move(leftward);
 export const right = move(rightward);
