@@ -15,7 +15,7 @@ levels.push({
 */
 
 levels.push({
-  worker: [8,1],
+  worker: [7,1],
   crates: [[2,2],[3,5],[6,4],[7,6]],
   fixtures: [
     [_, _, _, _, _, b, b, b, b, _],
