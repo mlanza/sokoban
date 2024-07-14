@@ -71,7 +71,7 @@ function move(beyond) {
     const {worker} = state;
     const beyond1 = beyond(1, worker, state);
     const beyond2 = beyond(2, worker, state);
-    const may = (clear(beyond1) || clear(beyond2)) && beyond1.what !== "building";
+    const may = (clear(beyond1) || clear(beyond2)) && !_.includes(["building", "water"], beyond1.what);
     const pushed = may && beyond1.what === "crate";
     return _.chain(state,
       may ? _.assoc(_, "worker", beyond1.coords) : _.identity,

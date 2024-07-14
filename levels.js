@@ -15,6 +15,69 @@ levels.push({
 */
 
 levels.push({
+  worker: [6,6],
+  crates: [[3,4],[4,4],[5,4],[7,3]],
+  fixtures: [
+    [_, b, b, b, b, b, b, b, _, _],
+    [_, b, g, g, g, g, g, b, _, _],
+    [b, b, g, w, w, w, g, b, b, b],
+    [b, g, g, w, g, g, g, g, g, b],
+    [b, g, g, x, x, x, x, g, g, b],
+    [b, g, g, b, g, w, g, b, b, b],
+    [b, b, b, b, g, g, g, g, b, _],
+    [_, _, _, b, g, g, g, g, b, _],
+    [_, _, _, b, b, b, b, b, b, _]
+  ]
+})
+
+
+levels.push({
+  worker: [1,6],
+  crates: [[2,2],[4,4],[6,4],[6,5]],
+  fixtures: [
+    [b, b, b, b, _, _, _, _, _],
+    [b, g, g, b, b, b, b, b, b],
+    [b, g, g, g, g, g, g, g, b],
+    [b, g, g, b, g, g, g, g, b],
+    [b, b, g, b, g, b, g, b, b],
+    [b, g, x, x, x, x, g, g, b],
+    [b, g, g, g, b, g, g, g, b],
+    [b, b, b, b, b, b, b, b, b]
+  ]
+});
+
+
+levels.push({
+  worker: [8,2],
+  crates: [[2,2],[5,2],[7,2],[2,4]],
+  fixtures: [
+    [b, b, b, b, b, b, b, _, _, _],
+    [b, g, x, g, g, x, b, b, b, b],
+    [b, g, g, g, g, g, g, g, g, b],
+    [b, b, g, w, g, g, g, w, g, b],
+    [_, b, x, w, w, x, w, w, g, b],
+    [_, b, g, g, g, g, g, g, g, b],
+    [_, b, b, b, b, b, b, b, b, b]
+  ]
+})
+
+
+levels.push({
+  worker: [6,2],
+  crates: [[3,4],[4,3],[5,4]],
+  fixtures: [
+    [_, _, b, b, b, b, b, b],
+    [_, _, b, x, x, g, g, b],
+    [b, b, b, b, b, g, g, b],
+    [b, g, g, g, g, g, g, b],
+    [b, g, g, g, g, g, g, b],
+    [b, b, b, g, w, w, g, b],
+    [_, _, b, g, g, g, x, b],
+    [_, _, b, b, b, b, b, b]
+  ]
+});
+
+levels.push({
   worker: [7,1],
   crates: [[2,2],[3,5],[6,4],[7,6]],
   fixtures: [
