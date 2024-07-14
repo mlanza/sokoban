@@ -5,6 +5,34 @@ export const x = "dest";
 export const _ = "void";
 export const levels = [];
 
+/*
+levels.push({
+  worker: [],
+  crates: [],
+  fixtures: [
+  ]
+})
+*/
+
+levels.push({
+  worker: [8,1],
+  crates: [[2,2],[3,5],[6,4],[7,6]],
+  fixtures: [
+    [_, _, _, _, _, b, b, b, b, _],
+    [b, b, b, b, b, b, g, g, b, b],
+    [b, g, g, g, g, g, g, g, g, b],
+    [b, g, b, g, b, b, g, b, g, b],
+    [b, g, b, g, g, b, g, b, g, b],
+    [b, g, b, g, g, b, g, b, g, b],
+    [b, g, b, g, g, b, g, g, g, b],
+    [b, g, b, b, g, b, g, b, b, b],
+    [b, g, g, x, x, x, x, g, b, _],
+    [b, b, b, b, g, b, b, g, b, _],
+    [_, _, _, b, g, g, g, g, b, _],
+    [_, _, _, b, b, b, b, b, b, _]
+  ]
+});
+
 levels.push({
   worker: [2,6],
   crates: [[2,2],[4,2],[3,3],[2,5],[3,5]],
