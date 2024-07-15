@@ -15,9 +15,10 @@ const data = _.get(levels, level);
 const final = !_.get(levels, level + 1);
 const el = dom.sel1("#sokoban");
 const next = dom.sel1("#next");
-const lvl = dom.sel1("#lvl span");
+const lvl = dom.sel1("#lvl");
+const src = dom.sel1("#source");
 
-dom.text(lvl, level + 1);
+dom.text(dom.sel1("span", lvl), level + 1);
 
 const $state = _.chain(data, s.add({dests}), s.verify, $.atom);
 const $hist = $.hist($state);
@@ -64,7 +65,7 @@ $.sub($solved, _.filter(_.identity), function(){ //kill controls once solved
 });
 
 $.sub($hist, function([curr, prior]){
-  const {worker, crates, fixtures} = curr;
+  const {worker, crates, fixtures, source} = curr;
   const [x, y] = worker;
   if (prior) {
     if (curr.crates !== prior.crates) {
@@ -84,6 +85,8 @@ $.sub($hist, function([curr, prior]){
         dom.attr(_, "data-y", y));
     }
   } else {
+    dom.attr(src, "href", source);
+
     const lay = _.chain(fixtures, s.contents, _.mapa(function({what, coords}){
       const [x, y] = coords;
       const below = s.locate(fixtures, [x, y + 1]);

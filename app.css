@@ -14,13 +14,21 @@ h1 {
   position: relative;
   margin: 0 auto;
 }
-#lvl {
+#info {
   position: absolute;
   right: 5px;
   top: 5px;
+  width: 5em;
   color: white;
+  text-align: center;
   font-family: monospace;
   font-size: 5pt;
+}
+#source {
+  font-size: 4pt;
+}
+#source:visited {
+  color: white;
 }
 #solved {
   position: absolute;
@@ -36,6 +44,12 @@ h1 {
 }
 .solved #solved {
   visibility: visible;
+}
+[data-rows="6"] {
+  height: 96px;
+}
+[data-rows="7"] {
+  height: 112px;
 }
 [data-rows="8"] {
   height: 128px;
@@ -61,6 +75,18 @@ h1 {
 [data-rows="15"] {
   height: 240px;
 }
+[data-rows="16"] {
+  height: 256px;
+}
+[data-rows="17"] {
+  height: 272px;
+}
+[data-cols="6"] {
+  width: 96px;
+}
+[data-cols="7"] {
+  width: 112px;
+}
 [data-cols="8"] {
   width: 128px;
 }
@@ -85,6 +111,13 @@ h1 {
 [data-cols="15"] {
   width: 240px;
 }
+[data-cols="16"] {
+  width: 256px;
+}
+[data-cols="17"] {
+  width: 272px;
+}
+
 [data-what] {
   position: absolute;
   background-repeat: no-repeat;
@@ -172,6 +205,12 @@ h1 {
 [data-x="15"] {
   left: 240px;
 }
+[data-x="16"] {
+  left: 256px;
+}
+[data-x="17"] {
+  left: 272px;
+}
 
 [data-y="0"] {
   top: 0;
@@ -220,4 +259,10 @@ h1 {
 }
 [data-y="15"] {
   top: 240px;
+}
+[data-y="16"] {
+  top: 256px;
+}
+[data-y="17"] {
+  top: 272px;
 }
