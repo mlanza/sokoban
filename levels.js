@@ -15,6 +15,133 @@ levels.push({
 */
 
 levels.push({
+  worker: [6,4],
+  crates: [[3,3],[3,4],[4,4],[3,6]],
+  fixtures: [
+    [_, b, b, b, b, _, _, _],
+    [_, b, g, g, b, b, b, b],
+    [_, b, g, g, b, g, g, b],
+    [_, b, g, x, g, g, g, b],
+    [b, b, g, x, x, g, g, b],
+    [b, g, g, w, x, b, b, b],
+    [b, g, g, g, g, g, b, _],
+    [b, g, g, b, g, g, b, _],
+    [b, b, b, b, g, g, b, _],
+    [_, _, _, b, b, b, b, _]
+  ],
+  source: "https://sokoban-jd.blogspot.com/2013/03/sokoban-lessons-four-boxes-with-rooms.html"
+});
+
+levels.push({
+  worker: [6,6],
+  crates: [[2,2],[2,5],[5,2],[5,5]],
+  fixtures: [
+    [b, b, b, b, b, b, b, b],
+    [b, g, g, g, g, g, g, b],
+    [b, g, g, g, g, g, g, b],
+    [b, g, x, w, w, x, b, b],
+    [b, g, x, w, w, x, g, b],
+    [b, g, g, g, g, g, g, b],
+    [b, g, g, g, b, g, g, b],
+    [b, b, b, b, b, b, b, b]
+  ],
+  source: "https://sokoban-jd.blogspot.com/2013/03/sokoban-lessons-four-boxes-with-rooms.html"
+});
+
+levels.push({
+  worker: [4,5],
+  crates: [[3,3],[3,4],[5,3],[5,4]],
+  fixtures: [
+    [_, _, _, b, b, b, b, b],
+    [_, _, _, b, g, g, g, b],
+    [b, b, b, b, g, g, g, b],
+    [b, g, g, g, g, g, g, b],
+    [b, x, x, x, w, g, g, b],
+    [b, b, x, g, g, g, g, b],
+    [_, b, g, g, b, g, g, b],
+    [_, b, b, b, b, b, b, b]
+  ],
+  source: "https://sokoban-jd.blogspot.com/2013/03/sokoban-lessons-four-boxes-with-rooms.html"
+});
+
+
+levels.push({
+  worker: [4,3],
+  crates: [[3,2],[3,4],[5,2],[5,4]],
+  fixtures: [
+    [b, b, b, b, b, _, _, _, _],
+    [b, g, g, g, b, b, b, b, _],
+    [b, g, b, g, g, g, g, b, b],
+    [b, g, b, x, g, x, g, g, b],
+    [b, g, g, g, w, g, w, g, b],
+    [b, g, g, x, g, x, g, g, b],
+    [b, b, g, g, b, b, b, b, b],
+    [_, b, b, b, b, _, _, _, _]
+  ],
+  source: "https://sokoban-jd.blogspot.com/2013/03/sokoban-lessons-four-boxes-with-rooms.html"
+});
+
+
+levels.push({
+  worker: [9,2],
+  crates: [[3,2],[7,2],[4,6],[6,5]],
+  fixtures: [
+    [b, b, b, b, b, b, b, b, b, b, b],
+    [b, g, g, g, g, g, b, b, g, g, b],
+    [b, g, g, g, g, x, x, g, x, g, b],
+    [b, b, b, g, b, b, g, b, g, x, b],
+    [_, _, b, g, g, b, g, b, g, b, b],
+    [_, _, b, g, g, b, g, b, g, g, b],
+    [_, _, b, g, g, g, g, g, g, g, b],
+    [_, _, b, g, g, b, b, b, g, g, b],
+    [_, _, b, b, b, b, _, b, b, b, b]
+  ],
+  source: "https://sokoban-jd.blogspot.com/2013/03/sokoban-lessons-four-boxes-with-rooms.html"
+});
+
+
+levels.push({
+  worker: [4,5],
+  crates: [[2,3],[2,5],[3,3],[6,5]],
+  fixtures: [
+    [_, _, _, _, b, b, b, b, b],
+    [b, b, b, b, b, x, g, g, b],
+    [b, g, g, g, g, g, g, g, b],
+    [b, x, x, x, b, b, g, b, b],
+    [b, b, g, g, b, b, g, g, b],
+    [_, b, g, g, g, g, g, g, b],
+    [_, b, g, b, b, b, b, g, b],
+    [_, b, g, g, g, g, g, g, b],
+    [_, b, b, b, b, b, b, b, b]
+  ],
+  source: "https://sokoban-jd.blogspot.com/2013/03/sokoban-lessons-four-boxes-with-rooms.html"
+});
+
+levels.push({
+  worker: [2,11],
+  crates: [[2,9],[4,9],[5,8],[12,9]],
+  fixtures: [
+    [_, _, _, _, _, _, b, b, b, b, _, _, _, _, _],
+    [_, _, _, _, _, _, b, g, g, b, _, _, _, _, _],
+    [_, _, _, _, _, _, b, g, g, b, _, _, _, _, _],
+    [_, _, _, _, _, _, b, g, g, b, _, _, _, _, _],
+    [_, _, _, _, b, b, b, b, g, b, b, _, _, _, _],
+    [_, _, _, b, b, g, g, b, g, g, b, _, _, _, _],
+    [_, _, _, b, g, g, g, g, g, g, b, _, _, _, _],
+    [_, _, _, b, g, g, b, b, g, b, b, b, b, b, b],
+    [b, b, b, b, b, g, g, b, g, b, b, g, g, g, b],
+    [b, x, x, g, g, g, g, b, g, g, x, x, g, g, b],
+    [b, g, g, g, b, b, g, b, g, g, b, b, b, b, b],
+    [b, b, b, b, b, g, g, b, b, g, b, b, _, _, _],
+    [_, _, _, _, b, g, g, g, g, g, g, b, _, _, _],
+    [_, _, _, _, b, b, b, b, g, g, g, b, _, _, _],
+    [_, _, _, _, _, _, _, b, b, b, b, b, _, _, _]
+  ],
+  source: "https://sokoban-jd.blogspot.com/2013/03/sokoban-lessons-four-boxes-with-rooms.html"
+})
+
+
+levels.push({
   worker: [2,7],
   crates: [[2,4],[5,4],[6,4],[6,3]],
   fixtures: [
