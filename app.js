@@ -28,48 +28,42 @@ const $keys = $.chan(document, "keydown");
 
 reg({$state, $hist, $solved, s});
 
-function which(key, shift = false){
+function which(keys, shift = false){
   return _.filter(function(e){
-    return e.key === key && e.shiftKey === shift;
+    return _.includes(keys, e.key) && e.shiftKey === shift;
   });
 }
 
-const noUp = $.sub($keys, which("ArrowUp"), function(e){
+const noUp = $.sub($keys, which(["ArrowUp"]), function(e){
   e.preventDefault();
   $.swap($state, s.up);
 });
-const noDown = $.sub($keys, which("ArrowDown"), function(e){
+const noDown = $.sub($keys, which(["ArrowDown"]), function(e){
   e.preventDefault();
   $.swap($state, s.down);
 });
-const noLeft = $.sub($keys, which("ArrowLeft"), function(e){
+const noLeft = $.sub($keys, which(["ArrowLeft"]), function(e){
   e.preventDefault();
   $.swap($state, s.left);
 });
-const noRight = $.sub($keys, which("ArrowRight"), function(e){
+const noRight = $.sub($keys, which(["ArrowRight"]), function(e){
   e.preventDefault();
   $.swap($state, s.right);
 });
 
-function back(e){
+$.sub($keys, which(["ArrowUp", "ArrowLeft"], true), function(e){
   e.preventDefault();
   if (prev){
     location.search = `?level=${level}`;
   }
-}
-function forward(e){
+});
+$.sub($keys, which(["ArrowDown", "ArrowRight"], true), function(e){
   e.preventDefault();
   if (next){
     location.search = `?level=${level + 2}`;
   }
-}
-
-$.sub($keys, which("ArrowUp", true), back);
-$.sub($keys, which("ArrowDown", true), forward);
-$.sub($keys, which("ArrowLeft", true), back);
-$.sub($keys, which("ArrowRight", true), forward);
-
-$.sub($keys, which("Escape"), function(e){
+});
+$.sub($keys, which(["Escape"]), function(e){
   e.preventDefault();
   location.reload(true);
 });
