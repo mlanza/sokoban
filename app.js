@@ -15,9 +15,9 @@ const data = _.get(levels, level);
 const next = _.get(levels, level + 1);
 const prev = _.get(levels, level - 1);
 const el = dom.sel1("#sokoban");
-const nexty = dom.sel1("#nexty");
-const lvl = dom.sel1("#lvl");
-const src = dom.sel1("#source");
+const board = dom.sel1("#board", el);
+const lvl = dom.sel1("#lvl", el);
+const src = dom.sel1("#source", el);
 
 dom.text(dom.sel1("span", lvl), level + 1);
 
@@ -85,14 +85,14 @@ $.sub($hist, function([curr, prior]){
         const [x, y] = crate;
         const old = _.get(prior.crates, idx);
         if (_.notEq(crate, old)) {
-          $.doto(dom.sel1(`[data-what='crate'][data-x='${old[0]}'][data-y='${old[1]}']`, el),
+          $.doto(dom.sel1(`[data-what='crate'][data-x='${old[0]}'][data-y='${old[1]}']`, board),
             dom.attr(_, "data-x", x),
             dom.attr(_, "data-y", y));
         }
       }, curr.crates);
     }
     if (curr.worker !== prior.worker) {
-      $.doto(dom.sel1("[data-what='worker']", el),
+      $.doto(dom.sel1("[data-what='worker']", board),
         dom.attr(_, "data-x", x),
         dom.attr(_, "data-y", y));
     }
@@ -110,11 +110,11 @@ $.sub($hist, function([curr, prior]){
     const rows = _.count(fixtures),
           cols = _.chain(fixtures, _.first, _.count);
 
-    $.doto(el,
+    $.doto(board,
       dom.attr(_, "data-rows", rows),
       dom.attr(_, "data-cols", cols));
 
-    dom.html(el,
+    dom.html(board,
       _.chain(lay,
         _.append(_, _.mapa(function([x, y]){
           return div({"data-what": "crate", "data-x": x, "data-y": y})
@@ -122,6 +122,6 @@ $.sub($hist, function([curr, prior]){
         _.append(_, div({"data-what": "worker", "data-x": x, "data-y": y})),
       ));
 
-    el.style["display"] = "block";
+    board.style["display"] = "block";
   }
 });

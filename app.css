@@ -1,4 +1,4 @@
-body {
+#sokoban {
   background-color: #36454f;
   color: white;
   font-family: monospace;
@@ -12,7 +12,7 @@ h1 {
   font-size: small;
   margin-bottom: 5px;
 }
-#sokoban {
+#board {
   position: relative;
   margin: 0 auto;
 }
