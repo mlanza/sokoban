@@ -19,6 +19,7 @@ const board = dom.sel1("#board", el);
 const lvl = dom.sel1("#lvl", el);
 const src = dom.sel1("#source", el);
 
+dom.text(dom.sel1("title"), `Level ${level + 1} | Sokoban`);
 dom.text(dom.sel1("span", lvl), level + 1);
 
 const $state = _.chain(data, s.add({dests}), s.verify, $.atom);
