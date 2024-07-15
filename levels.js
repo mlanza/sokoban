@@ -15,6 +15,116 @@ levels.push({
 */
 
 levels.push({
+  worker: [7,8],
+  crates: [[2,4],[3,4],[4,4],[5,4]],
+  fixtures: [
+    [_, _, _, b, b, b, b, b, b, b],
+    [b, b, b, b, g, g, g, g, g, b],
+    [b, g, g, g, g, g, g, b, g, b],
+    [b, g, b, g, b, g, b, b, g, b],
+    [b, g, g, g, g, g, b, g, g, b],
+    [b, b, b, g, b, g, b, g, b, b],
+    [b, g, g, g, b, g, b, g, b, _],
+    [b, g, b, b, b, g, b, g, b, _],
+    [b, x, x, x, x, g, g, g, b, _],
+    [b, b, b, b, b, b, b, b, b, _]
+  ],
+  source: "https://sokoban-jd.blogspot.com/2011/08/lines-four-boxes.html"
+});
+
+levels.push({
+  worker: [5,5],
+  crates: [[6,9],[6,10],[8,5],[8,10]],
+  fixtures: [
+    [b, b, b, b, b, _, _, _, _, _, _],
+    [b, g, g, g, b, _, _, b, b, b, b],
+    [b, g, g, g, b, b, b, b, g, g, b],
+    [b, b, g, g, x, x, x, x, g, g, b],
+    [b, b, g, b, b, b, b, b, g, g, b],
+    [b, g, g, b, g, g, g, b, g, b, b],
+    [b, g, g, g, g, g, g, b, g, b, b],
+    [b, b, g, g, b, g, b, b, g, g, b],
+    [_, b, b, b, b, g, g, b, g, g, b],
+    [_, _, _, _, b, g, g, b, g, g, b],
+    [_, _, _, _, b, g, g, g, g, g, b],
+    [_, _, _, _, b, b, b, b, g, g, b],
+    [_, _, _, _, _, _, _, b, b, b, b]
+  ],
+  source: "https://sokoban-jd.blogspot.com/2011/08/lines-four-boxes.html"
+});
+
+levels.push({
+  worker: [6,4],
+  crates: [[2,2],[5,5],[7,5],[6,7]],
+  fixtures: [
+    [_, b, b, b, b, b, b, _, _, _, _],
+    [_, b, g, g, g, g, b, _, _, _, _],
+    [_, b, g, g, g, g, b, _, _, _, _],
+    [b, b, g, b, g, b, b, b, b, _, _],
+    [b, g, g, b, g, g, g, g, b, _, _],
+    [b, g, g, g, g, g, b, g, b, b, b],
+    [b, b, b, b, b, g, b, g, g, g, b],
+    [_, _, _, b, g, x, x, x, x, g, b],
+    [_, _, _, b, g, g, g, b, g, b, b],
+    [_, _, _, b, b, b, g, g, g, b, _],
+    [_, _, _, _, _, b, b, b, b, b, _]
+  ],
+  source: "https://sokoban-jd.blogspot.com/2011/08/lines-four-boxes.html"
+});
+
+levels.push({
+  worker: [8,2],
+  crates: [[6,2],[7,2],[9,2],[7,4]],
+  fixtures: [
+    [_, _, _, _, b, b, b, b, b, b, b, b, _, _],
+    [_, _, _, _, b, g, x, x, x, x, g, b, _, _],
+    [b, b, b, b, b, g, g, g, g, g, g, b, _, _],
+    [b, g, g, g, b, b, g, b, b, b, b, b, b, b],
+    [b, g, g, g, g, g, g, g, g, g, g, g, g, b],
+    [b, b, b, b, b, g, g, g, b, b, g, g, g, b],
+    [_, _, _, _, b, b, b, g, g, b, b, b, b, b],
+    [_, _, _, _, _, _, b, g, g, b, _, _, _, _],
+    [_, _, _, _, _, _, b, g, g, b, _, _, _, _],
+    [_, _, _, _, _, _, b, b, b, b, _, _, _, _]
+  ],
+  source: "https://sokoban-jd.blogspot.com/2011/08/lines-four-boxes.html"
+});
+
+levels.push({
+  worker: [6,5],
+  crates: [[2,3],[4,3],[5,4],[5,5]],
+  fixtures: [
+    [_, _, _, b, b, b, b, _],
+    [b, b, b, b, g, b, b, b],
+    [b, g, g, b, g, g, g, b],
+    [b, g, g, x, x, x, x, b],
+    [b, g, g, g, g, g, g, b],
+    [b, b, b, b, b, g, g, b],
+    [_, _, _, _, b, g, g, b],
+    [_, _, _, _, b, b, b, b]
+  ],
+  source: "https://sokoban-jd.blogspot.com/2011/08/lines-four-boxes.html"
+});
+
+levels.push({
+  worker: [7,4],
+  crates: [[2,4],[3,4],[5,4],[5,2]],
+  fixtures: [
+    [_, b, b, b, b, b, b, b, b, b],
+    [_, b, g, g, g, g, g, g, g, b],
+    [b, b, g, w, w, g, b, b, g, b],
+    [b, g, g, w, w, g, g, b, g, b],
+    [b, g, g, g, x, x, x, x, g, b],
+    [b, g, g, b, g, g, g, b, g, b],
+    [b, b, g, b, b, b, b, b, g, b],
+    [_, b, g, g, g, g, g, g, g, b],
+    [_, b, b, b, b, b, b, b, b, b]
+  ],
+  source: "https://sokoban-jd.blogspot.com/2011/08/lines-four-boxes.html"
+});
+
+
+levels.push({
   worker: [1,6],
   crates: [[2,6],[3,6],[5,4],[5,5]],
   fixtures: [
