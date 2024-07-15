@@ -12,9 +12,10 @@ const params = new URLSearchParams(location.search),
       level = _.maybe(params.get("level"), parseInt, _.add(_, -1)) || 0;
 
 const data = _.get(levels, level);
-const final = !_.get(levels, level + 1);
+const next = _.get(levels, level + 1);
+const prev = _.get(levels, level - 1);
 const el = dom.sel1("#sokoban");
-const next = dom.sel1("#next");
+const nexty = dom.sel1("#nexty");
 const lvl = dom.sel1("#lvl");
 const src = dom.sel1("#source");
 
@@ -27,8 +28,10 @@ const $keys = $.chan(document, "keydown");
 
 reg({$state, $hist, $solved, s});
 
-function which(key){
-  return _.filter(_.pipe(_.get(_, "key"), _.eq(_, key)));
+function which(key, shift = false){
+  return _.filter(function(e){
+    return e.key === key && e.shiftKey === shift;
+  });
 }
 
 const noUp = $.sub($keys, which("ArrowUp"), function(e){
@@ -47,6 +50,25 @@ const noRight = $.sub($keys, which("ArrowRight"), function(e){
   e.preventDefault();
   $.swap($state, s.right);
 });
+
+function back(e){
+  e.preventDefault();
+  if (prev){
+    location.search = `?level=${level}`;
+  }
+}
+function forward(e){
+  e.preventDefault();
+  if (next){
+    location.search = `?level=${level + 2}`;
+  }
+}
+
+$.sub($keys, which("ArrowUp", true), back);
+$.sub($keys, which("ArrowDown", true), forward);
+$.sub($keys, which("ArrowLeft", true), back);
+$.sub($keys, which("ArrowRight", true), forward);
+
 $.sub($keys, which("Escape"), function(e){
   e.preventDefault();
   location.reload(true);
@@ -58,10 +80,6 @@ $.sub($solved, _.filter(_.identity), function(){ //kill controls once solved
   noLeft();
   noRight();
   dom.addClass(document.body, "solved");
-  final || $.sub($keys, which(" "), function(e){
-    e.preventDefault();
-    location.search = `?level=${level + 2}`
-  });
 });
 
 $.sub($hist, function([curr, prior]){
