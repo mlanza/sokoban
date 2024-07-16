@@ -3,6 +3,10 @@ import * as l from "./levels.js";
 
 export const init = _.get(l.levels, _);
 
+export function tile(what, above, below){
+ return what === l.b ? (below === l.b ? what : l.bb) : what === l.w ? (_.includes([l.g, l.x], above) ? l.gw : what) : what;
+}
+
 export function contents(fixtures){
   return _.flatten(_.mapIndexed(function(y, row){
     return _.mapIndexed(function(x, what){
