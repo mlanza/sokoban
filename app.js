@@ -35,22 +35,23 @@ function which(keys, shift = false){
   });
 }
 
-const noUp = $.sub($keys, which(["ArrowUp"]), function(e){
-  e.preventDefault();
-  $.swap($state, s.up);
-});
-const noDown = $.sub($keys, which(["ArrowDown"]), function(e){
-  e.preventDefault();
-  $.swap($state, s.down);
-});
-const noLeft = $.sub($keys, which(["ArrowLeft"]), function(e){
-  e.preventDefault();
-  $.swap($state, s.left);
-});
-const noRight = $.sub($keys, which(["ArrowRight"]), function(e){
-  e.preventDefault();
-  $.swap($state, s.right);
-});
+function go(how, facing){
+  return function(e){
+    e.preventDefault();
+    const worker = dom.sel1("[data-what='worker']", el);
+    dom.addClass(worker, "walk");
+    facing && dom.attr(worker, "data-facing", facing);
+    $.swap($state, how);
+    setTimeout(function(){
+      dom.removeClass(worker, "walk");
+    }, 250);
+  }
+}
+
+const noUp = $.sub($keys, which(["ArrowUp"]), go(s.up));
+const noDown = $.sub($keys, which(["ArrowDown"]), go(s.down));
+const noLeft = $.sub($keys, which(["ArrowLeft"]), go(s.left, "left"));
+const noRight = $.sub($keys, which(["ArrowRight"]), go(s.right, "right"));
 
 $.sub($keys, which(["ArrowUp", "ArrowLeft"], true), function(e){
   e.preventDefault();
