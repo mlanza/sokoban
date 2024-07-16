@@ -35,16 +35,25 @@ function which(keys, shift = false){
   });
 }
 
+function debounce(func, timeout){
+  let timer;
+  return (...args) => {
+    clearTimeout(timer);
+    timer = setTimeout(() => { func.apply(this, args); }, timeout);
+  };
+}
+
 function go(how, facing){
+  const stand = debounce(function(){
+    dom.removeClass(dom.sel1("#worker", el), "walk");
+  }, 250);
   return function(e){
     e.preventDefault();
-    const worker = dom.sel1("[data-what='worker']", el);
+    $.swap($state, how);
+    const worker = dom.sel1("#worker", el);
     dom.addClass(worker, "walk");
     facing && dom.attr(worker, "data-facing", facing);
-    $.swap($state, how);
-    setTimeout(function(){
-      dom.removeClass(worker, "walk");
-    }, 250);
+    stand();
   }
 }
 
@@ -94,7 +103,7 @@ $.sub($hist, function([curr, prior]){
       }, curr.crates);
     }
     if (curr.worker !== prior.worker) {
-      $.doto(dom.sel1("[data-what='worker']", board),
+      $.doto(dom.sel1("#worker", board),
         dom.attr(_, "data-x", x),
         dom.attr(_, "data-y", y));
     }
@@ -126,6 +135,8 @@ $.sub($hist, function([curr, prior]){
         }, crates)),
         _.append(_, div({"data-what": "worker", "data-x": x, "data-y": y})),
       ));
+
+    dom.attr(dom.sel1("[data-what='worker']", board), "id", "worker");
 
     board.style["display"] = "block";
   }
