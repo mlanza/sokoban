@@ -76,7 +76,11 @@ $.sub($keys, which(["ArrowDown", "ArrowRight"], true), function(e){
 });
 $.sub($keys, which(["Escape"]), function(e){
   e.preventDefault();
-  location.reload(true);
+  dom.addClass(dom.sel1("#worker", board), "slump");
+
+  setTimeout(function(){
+    location.reload(true);
+  },1000);
 });
 
 $.sub($solved, _.filter(_.identity), function(){ //kill controls once solved
