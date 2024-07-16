@@ -40,7 +40,7 @@ levels.push({
     [b, g, g, g, g, g, g, b],
     [b, g, g, g, g, g, g, b],
     [b, g, x, w, w, x, b, b],
-    [b, g, x, w, w, x, g, b],
+    [b, b, x, w, w, x, g, b],
     [b, g, g, g, g, g, g, b],
     [b, g, g, g, b, g, g, b],
     [b, b, b, b, b, b, b, b]
