@@ -2,9 +2,11 @@ export const b = "building";
 export const g = "ground";
 export const w = "water";
 export const x = "dest";
-export const _ = "void";
 export const bb = "back-building";
 export const gw = "ground-water";
+
+const _ = "void";
+
 export const levels = [];
 
 /*
@@ -12,7 +14,8 @@ levels.push({
   worker: [],
   crates: [],
   fixtures: [
-  ]
+  ],
+  source: ""
 })
 */
 
