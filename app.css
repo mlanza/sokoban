@@ -142,8 +142,18 @@ h1 {
   height: 16px;
   transition: top .3s ease 0s, left .3s ease 0s;
 }
+
+[data-what="worker"][data-facing="left"] {
+  transform: scaleX(-1);
+}
+[data-what="worker"][data-facing="right"] {
+  transform: scaleX(1);
+}
+[data-what="worker"].walk {
+  animation: walk .3s ease infinite;
+}
 [data-what="worker"] {
-  background-image: url(./images/dudeset.png);
+  background-image: url(./images/worker/tile000.png);
   background-position: -2px -3px;
   height: 18px;
   margin-top: -2px;
@@ -282,6 +292,32 @@ h1 {
   top: 272px;
 }
 
+@keyframes walk {
+  0%   {
+    background-image: url('./images/worker/tile001.png');
+  }
+  14%   {
+    background-image: url('./images/worker/tile006.png');
+  }
+  28%   {
+    background-image: url('./images/worker/tile007.png');
+  }
+  42%   {
+    background-image: url('./images/worker/tile008.png');
+  }
+  56%   {
+    background-image: url('./images/worker/tile009.png');
+  }
+  70%   {
+    background-image: url('./images/worker/tile010.png');
+  }
+  84%   {
+    background-image: url('./images/worker/tile011.png');
+  }
+  100% {
+    background-image: url('./images/worker/tile012.png');
+  }
+}
 @keyframes bump {
   0% {
     transform: translate3d(0, 0, 0);
