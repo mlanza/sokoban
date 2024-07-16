@@ -16,6 +16,9 @@ h1 {
   position: relative;
   margin: 0 auto;
 }
+.solved #board {
+  animation: bump .25s ease-in;
+}
 #info {
   position: absolute;
   right: 5px;
@@ -278,3 +281,28 @@ h1 {
 [data-y="17"] {
   top: 272px;
 }
+
+@keyframes bump {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  15% {
+    transform: translate3d(0, -8px, 0);
+  }
+  30% {
+    transform: translate3d(0, 0, 0);
+  }
+  45% {
+    transform: translate3d(0, -5px, 0);
+  }
+  60% {
+    transform: translate3d(0, 0, 0);
+  }
+  85% {
+    transform: translate3d(0, -2px, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
