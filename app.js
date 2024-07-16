@@ -11,9 +11,9 @@ const div = dom.tag('div');
 const params = new URLSearchParams(location.search),
       level = _.maybe(params.get("level"), parseInt, _.add(_, -1)) || 0;
 
-const data = _.get(l.levels, level);
-const next = _.get(l.levels, level + 2);
-const prev = _.get(l.levels, level - 1);
+const next = s.init(level + 2),
+      prev = s.init(level - 1);
+
 const el = dom.sel1("#sokoban");
 const board = dom.sel1("#board", el);
 const lvl = dom.sel1("#lvl", el);
@@ -22,7 +22,7 @@ const src = dom.sel1("#source", el);
 dom.text(dom.sel1("title"), `Level ${level + 1} | Sokoban`);
 dom.text(dom.sel1("span", lvl), level + 1);
 
-const $state = _.chain(data, s.add({dests}), s.verify, $.atom);
+const $state = _.chain(s.init(level), s.add({dests}), s.verify, $.atom);
 const $hist = $.hist($state);
 const $solved = $.map(s.solved, $state);
 const $keys = $.chan(document, "keydown");
