@@ -4,7 +4,6 @@ import dom from "./libs/atomic_/dom.js";
 import {reg} from "./libs/cmd.js";
 import {dests} from "./sokoban.js";
 import * as s from "./sokoban.js";
-import * as l from "./levels.js";
 
 const div = dom.tag('div');
 
@@ -116,10 +115,8 @@ $.sub($hist, function([curr, prior]){
 
     const lay = _.chain(fixtures, s.contents, _.mapa(function({what, coords}){
       const [x, y] = coords;
-      const below = s.locate(fixtures, [x, y + 1]);
-      const above = s.locate(fixtures, [x, y - 1]);
       return div({
-        "data-what": what === l.b ? (below === l.b ? what : l.bb) : what === l.w ? (_.includes([l.g, l.x], above) ? l.gw : what) : what,
+        "data-what": s.tile(what, s.locate(fixtures, [x, y - 1]), s.locate(fixtures, [x, y + 1])),
         "data-x": x,
         "data-y": y
       });
