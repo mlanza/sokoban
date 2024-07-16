@@ -554,8 +554,8 @@ levels.push({
 });
 
 levels.push({
-  worker: [],
-  crates: [],
+  worker: [5,1],
+  crates: [[2,2],[4,2],[5,2],[6,2]],
   fixtures: [
     [_, _, _, _, b, b, b, b, _],
     [b, b, b, b, b, g, g, b, _],
@@ -565,7 +565,8 @@ levels.push({
     [_, b, g, x, g, x, g, g, b],
     [_, b, g, g, g, b, b, b, b],
     [_, b, b, b, b, b, _, _, _]
-  ]
+  ],
+  source: "https://sokoban-jd.blogspot.com/2013/03/sokoban-lessons-four-boxes-with-rooms.html"
 });
 
 levels.push({

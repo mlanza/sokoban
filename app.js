@@ -12,7 +12,7 @@ const params = new URLSearchParams(location.search),
       level = _.maybe(params.get("level"), parseInt, _.add(_, -1)) || 0;
 
 const data = _.get(levels, level);
-const next = _.get(levels, level + 1);
+const next = _.get(levels, level + 2);
 const prev = _.get(levels, level - 1);
 const el = dom.sel1("#sokoban");
 const board = dom.sel1("#board", el);
