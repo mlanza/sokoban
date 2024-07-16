@@ -3,6 +3,8 @@ export const g = "ground";
 export const w = "water";
 export const x = "dest";
 export const _ = "void";
+export const bb = "back-building";
+export const gw = "ground-water";
 export const levels = [];
 
 /*
