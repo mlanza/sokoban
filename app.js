@@ -2,18 +2,18 @@ import _ from "./libs/atomic_/core.js";
 import $ from "./libs/atomic_/shell.js";
 import dom from "./libs/atomic_/dom.js";
 import {reg} from "./libs/cmd.js";
-import {levels} from "./levels.js";
 import {dests} from "./sokoban.js";
 import * as s from "./sokoban.js";
+import * as l from "./levels.js";
 
 const div = dom.tag('div');
 
 const params = new URLSearchParams(location.search),
       level = _.maybe(params.get("level"), parseInt, _.add(_, -1)) || 0;
 
-const data = _.get(levels, level);
-const next = _.get(levels, level + 2);
-const prev = _.get(levels, level - 1);
+const data = _.get(l.levels, level);
+const next = _.get(l.levels, level + 2);
+const prev = _.get(l.levels, level - 1);
 const el = dom.sel1("#sokoban");
 const board = dom.sel1("#board", el);
 const lvl = dom.sel1("#lvl", el);
@@ -104,8 +104,11 @@ $.sub($hist, function([curr, prior]){
       const [x, y] = coords;
       const below = s.locate(fixtures, [x, y + 1]);
       const above = s.locate(fixtures, [x, y - 1]);
-      const w = what === "building" ? (below === "building" ? what : "back-building") : what === "water" ? (_.includes(["ground", "dest"], above) ? "ground-water" : what) : what;
-      return div({"data-what": w, "data-x": x, "data-y": y});
+      return div({
+        "data-what": what === l.b ? (below === l.b ? what : l.bb) : what === l.w ? (_.includes([l.g, l.x], above) ? l.gw : what) : what,
+        "data-x": x,
+        "data-y": y
+      });
     }, _));
 
     const rows = _.count(fixtures),
