@@ -1,7 +1,7 @@
 # Sokoban
 Demonstrates creating a simple game using [Atomic](https://github.com/mlanza/atomic).
 
-See [demo](https://doesideas.com/programming/sokoban/).
+See [demo](https://doesideas.com/sokoban/?monitor=*).
 
 The beautiful [tileset](https://dani-maccari.itch.io/sokoban-tileset) and [character](https://dani-maccari.itch.io/nuclear-leak-character-asset-pack) were made available by Dani Maccari.
 
