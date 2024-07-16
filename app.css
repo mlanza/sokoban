@@ -302,6 +302,11 @@ h1 {
   top: 272px;
 }
 
+body::after { /*preload images*/
+  position: absolute; width:0; height:0; overflow:hidden; z-index:-1;
+  content: url('./images/worker/tile001.png') url('./images/worker/tile002.png') url('./images/worker/tile003.png') url('./images/worker/tile006.png') url('./images/worker/tile007.png') url('./images/worker/tile008.png') url('./images/worker/tile009.png') url('./images/worker/tile010.png') url('./images/worker/tile011.png') url('./images/worker/tile012.png') url('./images/worker/tile013.png') url('./images/worker/tile014.png') url('./images/worker/tile019.png') url('./images/worker/tile024.png') url('./images/worker/tile025.png') url('./images/worker/tile026.png') url('./images/worker/tile027.png') url('./images/worker/tile028.png') url('./images/worker/tile029.png');
+}
+
 @keyframes walk {
   0%   {
     background-image: url('./images/worker/tile001.png');
