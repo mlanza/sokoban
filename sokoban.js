@@ -1,11 +1,8 @@
 import _ from "./libs/atomic_/core.js";
 import * as l from "./levels.js";
+export {tile} from "./levels.js";
 
 export const init = _.get(l.levels, _);
-
-export function tile(what, above, below){
- return what === l.b ? (below === l.b ? what : l.bb) : what === l.w ? (_.includes([l.g, l.x], above) ? l.gw : what) : what;
-}
 
 export function contents(fixtures){
   return _.flatten(_.mapIndexed(function(y, row){
@@ -17,7 +14,7 @@ export function contents(fixtures){
 }
 
 const ordered = _.sort(_.asc(_.first), _.asc(_.second), _);
-export const dests = _.pipe(_.get(_, "fixtures"), contents, _.filter(({what}) => what === "dest", _), _.mapa(_.get(_, "coords"), _), ordered);
+export const dests = _.pipe(_.get(_, "fixtures"), contents, _.filter(({what}) => l.isDest(what), _), _.mapa(_.get(_, "coords"), _), ordered);
 
 export function solved({crates, dests}){
   return _.eq(ordered(crates), dests);
@@ -45,19 +42,21 @@ export function locate(fixtures, coords){
   return _.getIn(fixtures, [row, col]);
 }
 
-function vertical(offset, [x, y], state){
-  const {fixtures, crates} = state;
-  const coords = [x, y + offset];
-  const what = _.detect(_.eq(_, coords), crates) ? "crate" : locate(fixtures, coords);
-  return {what, coords};
+function at(f){
+  return function(offset, pos, {fixtures, crates}){
+    const coords = f(pos, offset);
+    const what = _.detect(_.eq(_, coords), crates) ? "crate" : locate(fixtures, coords);
+    return {what, coords};
+  }
 }
 
-function horizontal(offset, [x, y], state){
-  const {fixtures, crates} = state;
-  const coords = [x + offset, y];
-  const what = _.detect(_.eq(_, coords), crates) ? "crate" : locate(fixtures, coords);
-  return {what, coords};
-}
+const vertical = at(function([x, y], offset){
+  return [x, y + offset]
+});
+
+const horizontal = at(function([x, y], offset){
+  return [x + offset, y]
+});
 
 function upward(offset, coords, state){
   return vertical(-offset, coords, state);
@@ -71,14 +70,14 @@ function leftward(offset, coords, state){
 
 const rightward = horizontal;
 
-const clear = _.pipe(_.get(_, "what"), _.includes(["ground", "dest"], _));
+const clear = _.pipe(_.get(_, "what"), l.empty);
 
 function move(beyond) {
   return function(state){
     const {worker} = state;
     const beyond1 = beyond(1, worker, state);
     const beyond2 = beyond(2, worker, state);
-    const may = (clear(beyond1) || clear(beyond2)) && !_.includes(["building", "water"], beyond1.what);
+    const may = (clear(beyond1) || clear(beyond2)) && !l.blocked(beyond1.what);
     const pushed = may && beyond1.what === "crate";
     return _.chain(state,
       may ? _.assoc(_, "worker", beyond1.coords) : _.identity,

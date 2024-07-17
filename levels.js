@@ -1,11 +1,20 @@
-export const b = "building";
-export const g = "ground";
-export const w = "water";
-export const x = "dest";
-export const bb = "back-building";
-export const gw = "ground-water";
+import {includes, partial} from "./libs/atomic/core.js";
 
+const b = "building";
+const g = "ground";
+const w = "water";
+const x = "dest";
+const bb = "back-building";
+const gw = "ground-water";
 const _ = "void";
+
+export function tile(what, above, below){
+  return what === b ? (below === b ? what : bb) : what === w ? (includes([g, x], above) ? gw : what) : what;
+ }
+
+export const empty = partial(includes, [g, x]);
+export const blocked = partial(includes, [b, w]);
+export const isDest = what => what === x;
 
 export const levels = [];
 
