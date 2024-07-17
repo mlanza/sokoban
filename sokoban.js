@@ -50,25 +50,21 @@ function at(f){
   }
 }
 
-const vertical = at(function([x, y], offset){
+const upward = at(function([x, y], offset){
+  return [x, y - offset]
+});
+
+const downward = at(function([x, y], offset){
   return [x, y + offset]
 });
 
-const horizontal = at(function([x, y], offset){
-  return [x + offset, y]
+const leftward = at(function([x, y], offset){
+  return [x - offset, y]
 });
 
-function upward(offset, coords, state){
-  return vertical(-offset, coords, state);
-}
-
-const downward = vertical;
-
-function leftward(offset, coords, state){
-  return horizontal(-offset, coords, state);
-}
-
-const rightward = horizontal;
+const rightward = at(function([x, y], offset){
+  return [x + offset, y]
+});
 
 const clear = _.pipe(_.get(_, "what"), l.empty);
 
@@ -87,7 +83,6 @@ function move(beyond) {
         }, crates);
         return idx !== null ? _.assoc(crates, idx, beyond2.coords) : crates;
       }) : _.identity);
-    return state;
   }
 }
 
