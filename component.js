@@ -1,7 +1,7 @@
 import _ from "./libs/atomic_/core.js";
 import $ from "./libs/atomic_/shell.js";
 import dom from "./libs/atomic_/dom.js";
-import {dests} from "./sokoban.js";
+import {dests, up, down, right, left} from "./sokoban.js";
 import * as s from "./sokoban.js";
 
 function Sokoban($state, $hist, $solved, next, prev){
@@ -18,7 +18,7 @@ function trigger(self, key, options){
     const obs = can ? self.events[key] : [];
     $.each(_.invoke(_, options), obs);
   } else {
-    $.swap(self.$state, _.get({up: s.up, down: s.down, right: s.right, left: s.left}, key, _.identity));
+    $.swap(self.$state, _.get({up, down, right, left}, key, _.identity));
   }
 }
 
@@ -43,10 +43,8 @@ $.doto(Sokoban,
   _.implement($.IEvented, {on, trigger}));
 
 export function sokoban(level){
-  const $state = _.chain(s.init(level), s.add({dests}), s.verify, $.atom),
-        $hist = $.hist($state),
-        $solved = $.map(s.solved, $state);
-  return new Sokoban($state, $hist, $solved, s.init(level + 2), s.init(level - 1));
+  const $state = _.chain(s.init(level), s.add({dests}), s.verify, $.atom);
+  return new Sokoban($state, $.hist($state), $.map(s.solved, $state), s.init(level + 2), s.init(level - 1));
 }
 
 export default sokoban;
