@@ -41,10 +41,6 @@ $.on($s, "prev", function(){
 });
 
 $.on($s, "solved", function(){
-  noUp();
-  noDown();
-  noLeft();
-  noRight();
   dom.addClass(document.body, "solved");
 });
 
@@ -110,6 +106,21 @@ function which(keys, shift = false){
   });
 }
 
+$.sub($keys, which(["ArrowUp", "ArrowLeft"], true), function(e){
+  e.preventDefault();
+  $.trigger($s, "prev");
+});
+
+$.sub($keys, which(["ArrowDown", "ArrowRight"], true), function(e){
+  e.preventDefault();
+  $.trigger($s, "next");
+});
+
+$.sub($keys, which(["Escape"]), function(e){
+  e.preventDefault();
+  $.trigger($s, "reset");
+});
+
 function debounce(func, timeout){
   let timer;
   return (...args) => {
@@ -137,17 +148,9 @@ const noDown = $.sub($keys, which(["ArrowDown"]), go("down"));
 const noLeft = $.sub($keys, which(["ArrowLeft"]), go("left"));
 const noRight = $.sub($keys, which(["ArrowRight"]), go("right"));
 
-$.sub($keys, which(["ArrowUp", "ArrowLeft"], true), function(e){
-  e.preventDefault();
-  $.trigger($s, "prev");
-});
-
-$.sub($keys, which(["ArrowDown", "ArrowRight"], true), function(e){
-  e.preventDefault();
-  $.trigger($s, "next");
-});
-
-$.sub($keys, which(["Escape"]), function(e){
-  e.preventDefault();
-  $.trigger($s, "reset");
+$.on($s, "solved", function(){
+  noUp();
+  noDown();
+  noLeft();
+  noRight();
 });
