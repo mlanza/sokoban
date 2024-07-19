@@ -4,14 +4,12 @@ import dom from "./libs/atomic_/dom.js";
 import {reg} from "./libs/cmd.js";
 import {dests} from "./sokoban.js";
 import * as s from "./sokoban.js";
+import * as c from "./component.js";
 
 const div = dom.tag('div');
 
 const params = new URLSearchParams(location.search),
       level = _.maybe(params.get("level"), parseInt, _.add(_, -1)) || 0;
-
-const next = s.init(level + 2),
-      prev = s.init(level - 1);
 
 const el = dom.sel1("#sokoban");
 const board = dom.sel1("#board", el);
@@ -21,60 +19,12 @@ const src = dom.sel1("#source", el);
 dom.text(dom.sel1("title"), `Level ${level + 1} | Sokoban`);
 dom.text(dom.sel1("span", lvl), level + 1);
 
-const $state = _.chain(s.init(level), s.add({dests}), s.verify, $.atom);
-const $hist = $.hist($state);
-const $solved = $.map(s.solved, $state);
-const $keys = $.chan(document, "keydown");
+const $s = c.sokoban(level); //headless component!
 
-reg({$state, $hist, $solved, s});
+reg({$s, s});
 
-function which(keys, shift = false){
-  return _.filter(function(e){
-    return _.includes(keys, e.key) && e.shiftKey === shift;
-  });
-}
-
-function debounce(func, timeout){
-  let timer;
-  return (...args) => {
-    clearTimeout(timer);
-    timer = setTimeout(() => { func.apply(this, args); }, timeout);
-  };
-}
-
-function go(how, facing){
-  const stand = debounce(function(){
-    dom.removeClass(dom.sel1("#worker", el), "walk");
-  }, 250);
-  return function(e){
-    e.preventDefault();
-    $.swap($state, how);
-    const worker = dom.sel1("#worker", el);
-    dom.addClass(worker, "walk");
-    facing && dom.attr(worker, "data-facing", facing);
-    stand();
-  }
-}
-
-const noUp = $.sub($keys, which(["ArrowUp"]), go(s.up));
-const noDown = $.sub($keys, which(["ArrowDown"]), go(s.down));
-const noLeft = $.sub($keys, which(["ArrowLeft"]), go(s.left, "left"));
-const noRight = $.sub($keys, which(["ArrowRight"]), go(s.right, "right"));
-
-$.sub($keys, which(["ArrowUp", "ArrowLeft"], true), function(e){
-  e.preventDefault();
-  if (prev){
-    location.search = `?level=${level}`;
-  }
-});
-$.sub($keys, which(["ArrowDown", "ArrowRight"], true), function(e){
-  e.preventDefault();
-  if (next){
-    location.search = `?level=${level + 2}`;
-  }
-});
-$.sub($keys, which(["Escape"]), function(e){
-  e.preventDefault();
+//wire up component
+$.on($s, "reset", function(){
   dom.addClass(dom.sel1("#worker", board), "slump");
 
   setTimeout(function(){
@@ -82,7 +32,15 @@ $.sub($keys, which(["Escape"]), function(e){
   },1000);
 });
 
-$.sub($solved, _.filter(_.identity), function(){ //kill controls once solved
+$.on($s, "next", function(){
+  location.search = `?level=${level + 2}`;
+});
+
+$.on($s, "prev", function(){
+  location.search = `?level=${level}`;
+});
+
+$.on($s, "solved", function(){
   noUp();
   noDown();
   noLeft();
@@ -90,7 +48,7 @@ $.sub($solved, _.filter(_.identity), function(){ //kill controls once solved
   dom.addClass(document.body, "solved");
 });
 
-$.sub($hist, function([curr, prior]){
+$.sub($s, function([curr, prior]){
   const {worker, crates, fixtures, source} = curr;
   const [x, y] = worker;
   if (prior) {
@@ -141,4 +99,55 @@ $.sub($hist, function([curr, prior]){
 
     board.style["display"] = "block";
   }
+});
+
+//wire up controls
+const $keys = $.chan(document, "keydown");
+
+function which(keys, shift = false){
+  return _.filter(function(e){
+    return _.includes(keys, e.key) && e.shiftKey === shift;
+  });
+}
+
+function debounce(func, timeout){
+  let timer;
+  return (...args) => {
+    clearTimeout(timer);
+    timer = setTimeout(() => { func.apply(this, args); }, timeout);
+  };
+}
+
+function go(how){
+  const stand = debounce(function(){
+    dom.removeClass(dom.sel1("#worker", el), "walk");
+  }, 250);
+  return function(e){
+    e.preventDefault();
+    $.trigger($s, how);
+    const worker = dom.sel1("#worker", el);
+    dom.addClass(worker, "walk");
+    _.includes(["left", "right"], how) && dom.attr(worker, "data-facing", how);
+    stand();
+  }
+}
+
+const noUp = $.sub($keys, which(["ArrowUp"]), go("up"));
+const noDown = $.sub($keys, which(["ArrowDown"]), go("down"));
+const noLeft = $.sub($keys, which(["ArrowLeft"]), go("left"));
+const noRight = $.sub($keys, which(["ArrowRight"]), go("right"));
+
+$.sub($keys, which(["ArrowUp", "ArrowLeft"], true), function(e){
+  e.preventDefault();
+  $.trigger($s, "prev");
+});
+
+$.sub($keys, which(["ArrowDown", "ArrowRight"], true), function(e){
+  e.preventDefault();
+  $.trigger($s, "next");
+});
+
+$.sub($keys, which(["Escape"]), function(e){
+  e.preventDefault();
+  $.trigger($s, "reset");
 });
