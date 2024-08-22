@@ -143,7 +143,7 @@ h1 {
   transition: top .3s ease 0s, left .3s ease 0s;
 }
 #worker {
-  background-image: url(./images/worker/tile000.png);
+  background-image: url(./images/dudeset.png);
   background-position: 0px 0px;
   height: 20px;
   width: 20px;
@@ -151,7 +151,6 @@ h1 {
   margin-left: -1px;
   overflow: visible;
 }
-
 #worker[data-facing="left"] {
   transform: scaleX(-1);
   margin-left: -2px;
@@ -160,13 +159,13 @@ h1 {
   transform: scaleX(1);
 }
 .solved #worker {
-  animation: glee .25s forwards;
+  animation: glee .25s steps(2) forwards;
 }
 #worker.walk {
-  animation: walk .3s infinite;
+  animation: walk .3s steps(5) infinite;
 }
 #worker.slump {
-  animation: slump .5s forwards;
+  animation: slump .5s steps(5) forwards;
 }
 [data-what="crate"] {
   background-position: 0 -64px;
@@ -301,73 +300,28 @@ h1 {
 [data-y="17"] {
   top: 272px;
 }
-
-body::after { /*preload images*/
-  position: absolute; width:0; height:0; overflow:hidden; z-index:-1;
-  content: url('./images/worker/tile001.png') url('./images/worker/tile002.png') url('./images/worker/tile003.png') url('./images/worker/tile006.png') url('./images/worker/tile007.png') url('./images/worker/tile008.png') url('./images/worker/tile009.png') url('./images/worker/tile010.png') url('./images/worker/tile011.png') url('./images/worker/tile012.png') url('./images/worker/tile013.png') url('./images/worker/tile014.png') url('./images/worker/tile019.png') url('./images/worker/tile024.png') url('./images/worker/tile025.png') url('./images/worker/tile026.png') url('./images/worker/tile027.png') url('./images/worker/tile028.png') url('./images/worker/tile029.png');
-}
-
 @keyframes walk {
-  0%   {
-    background-image: url('./images/worker/tile001.png');
+  from {
+    background-position: 0 -20px;
   }
-  14%   {
-    background-image: url('./images/worker/tile006.png');
-  }
-  28%   {
-    background-image: url('./images/worker/tile007.png');
-  }
-  42%   {
-    background-image: url('./images/worker/tile008.png');
-  }
-  56%   {
-    background-image: url('./images/worker/tile009.png');
-  }
-  70%   {
-    background-image: url('./images/worker/tile010.png');
-  }
-  84%   {
-    background-image: url('./images/worker/tile011.png');
-  }
-  100% {
-    background-image: url('./images/worker/tile012.png');
+  to {
+    background-position: -100px -20px;
   }
 }
 @keyframes slump {
-  0%   {
-    background-image: url('./images/worker/tile001.png');
+  from {
+    background-position: 0 -80px;
   }
-  15%   {
-    background-image: url('./images/worker/tile002.png');
-  }
-  30%   {
-    background-image: url('./images/worker/tile024.png');
-  }
-  45%   {
-    background-image: url('./images/worker/tile025.png');
-  }
-  60%   {
-    background-image: url('./images/worker/tile026.png');
-  }
-  75%   {
-    background-image: url('./images/worker/tile027.png');
-  }
-  90%   {
-    background-image: url('./images/worker/tile028.png');
-  }
-  100%   {
-    background-image: url('./images/worker/tile029.png');
+  to {
+    background-position: -100px -80px;
   }
 }
 @keyframes glee {
-  0%   {
-    background-image: url('./images/worker/tile012.png');
+  from {
+    background-position: 0 -40px;
   }
-  50%   {
-    background-image: url('./images/worker/tile013.png');
-  }
-  100%   {
-    background-image: url('./images/worker/tile014.png');
+  to {
+    background-position: -40px -40px;
   }
 }
 @keyframes bump {
