@@ -143,14 +143,10 @@ function go(how){
   }
 }
 
-const noUp = $.sub($keys, which(["ArrowUp"]), go("up"));
-const noDown = $.sub($keys, which(["ArrowDown"]), go("down"));
-const noLeft = $.sub($keys, which(["ArrowLeft"]), go("left"));
-const noRight = $.sub($keys, which(["ArrowRight"]), go("right"));
+const unsub = $.does(
+  $.sub($keys, which(["ArrowUp"]), go("up")),
+  $.sub($keys, which(["ArrowDown"]), go("down")),
+  $.sub($keys, which(["ArrowLeft"]), go("left")),
+  $.sub($keys, which(["ArrowRight"]), go("right")));
 
-$.on($s, "solved", function(){
-  noUp();
-  noDown();
-  noLeft();
-  noRight();
-});
+$.on($s, "solved", unsub);
