@@ -17,11 +17,14 @@ export const empty = _.partial(_.includes, [g, x]);
 export const blocked = _.partial(_.includes, [b, w]);
 export const isDest = what => what === x;
 
-
 const ILevel = _.protocol({
   name,
   load: null
 });
+
+function name({name}){
+  return name;
+}
 
 function BoundLevel(name, width, height, data){
   this.name = name;
@@ -30,7 +33,7 @@ function BoundLevel(name, width, height, data){
   this.data = data;
 }
 
-$.doto(BoundLevel, _.implement(ILevel, {load}));
+$.doto(BoundLevel, _.implement(ILevel, {load, name}));
 
 function boundLevel(name, width, height, data){
   return new BoundLevel(name, width, height, data);
@@ -83,6 +86,4 @@ export const levels = _.chain(text, _.reFindAll(re, _), _.mapa(function({groups}
   const {name, width, height, data} = groups;
   return boundLevel(name, parseInt(width), parseInt(height), data);
 }, _), _.butlast, _.mapa(ILevel.load, _));
-
-$.log({levels})
 

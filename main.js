@@ -5,6 +5,7 @@ import {reg} from "./libs/cmd.js";
 import {dests} from "./sokoban.js";
 import * as s from "./sokoban.js";
 import * as c from "./component.js";
+import { levels } from "./levels.js";
 
 const div = dom.tag('div');
 
@@ -19,7 +20,7 @@ const src = dom.sel1("#source", el);
 dom.text(dom.sel1("title"), `Level ${level + 1} | Sokoban`);
 dom.text(dom.sel1("span", lvl), level + 1);
 
-const $s = c.sokoban(level); //headless component!
+const $s = c.sokoban(levels, level); //headless component!
 
 reg({$s, s});
 
@@ -143,7 +144,7 @@ function go(how){
   }
 }
 
-const unsub = _.does(
+const unsub = $.does(
   $.sub($keys, which(["ArrowUp"]), go("up")),
   $.sub($keys, which(["ArrowDown"]), go("down")),
   $.sub($keys, which(["ArrowLeft"]), go("left")),

@@ -4,7 +4,8 @@ import dom from "./libs/atomic_/dom.js";
 import {dests, up, down, right, left} from "./sokoban.js";
 import * as s from "./sokoban.js";
 
-function Sokoban($state, $hist, $solved, next, prev){
+function Sokoban(levels, $state, $hist, $solved, next, prev){
+  this.levels = levels;
   this.$state = $state;
   this.$hist = $hist;
   this.$solved = $solved;
@@ -42,9 +43,10 @@ $.doto(Sokoban,
   _.implement($.ISubscribe, {sub}),
   _.implement($.IEvented, {on, trigger}));
 
-export function sokoban(level){
-  const $state = _.chain(s.init(level), s.add({dests}), s.verify, $.atom);
-  return new Sokoban($state, $.hist($state), $.map(s.solved, $state), s.init(level + 2), s.init(level - 1));
+export function sokoban(levels, level){
+  const init = _.get(levels, _);
+  const $state = _.chain(init(level), s.add({dests}), s.verify, $.atom);
+  return new Sokoban(levels, $state, $.hist($state), $.map(s.solved, $state), init(level + 2), init(level - 1));
 }
 
 export default sokoban;

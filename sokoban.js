@@ -2,8 +2,6 @@ import _ from "./libs/atomic_/core.js";
 import * as l from "./levels.js";
 export {tile} from "./levels.js";
 
-export const init = _.get(l.levels, _);
-
 export function contents(fixtures){
   return _.flatten(_.mapIndexed(function(y, row){
     return _.mapIndexed(function(x, what){
