@@ -1,0 +1,3050 @@
+Boxxle(GameBoy) FAQ/Walkthrough
+version 1.0.0 by schultw.andrez@sbcglobal.net
+
+Credit: https://gamefaqs.gamespot.com/gameboy/585643-boxxle/faqs/52416
+
+Please do not reproduce this FAQ for profit without my prior consent. If you
+write a polite e-mail to me referring to me(and this FAQ) by name, then I
+will probably say OK. But if I ignore you that means no--and I am bad about
+answering e-mail. Sorry.
+
+================================
+
+            OUTLINE
+
+  1. INTRODUCTION
+
+  2. CONTROLS
+
+  3. STRATEGIES
+
+  4. WALKTHROUGH
+
+  5. VERSIONS/CREDITS
+
+================================
+
+  1. INTRODUCTION
+
+Boxxle for the GameBoy is yet another port of Sokoban. Where you push boxes
+on a grid til all are on the specified squares.
+
+While it doesn't have many original levels if you've played other
+versions(especially the TG16 version,) it has enough challenge for sokoban
+fans to be worth a look. It even has a cut scene after each group of 10! It
+has 108 levels total(the last group having only 8 levels) and a 1-move
+takeback feature(assuming you didn't run into a wall and keep running--then
+it says "takeback" = undo running into a wall) and a replay feature(play up
+to a certain point.)
+
+Well, this is a sparse introduction, but Sokoban is a pretty straightforward
+game. Sokoban fans in general probably saw all these levels, but if you're
+curious...
+
+...oh, and I put this link in every FAQ. It doesn't work for bigger levels.
+AI for Sokoban is in fact not perfect. But this will help with some. And it's
+neat, and more exciting than Sokoban at times.
+
+http://codecola.net/sps/index.php
+
+  2. CONTROLS
+
+If you are using VisualBoyAdvance, [space] to speed up the game works great.
+Use it in tandem with takebacks. I also recommend playing at 150% speed.
+
+Moving is as expected. You cannot push chains of boxes around.
+
+(A) takes a move back
+(start) brings up the menu. (B) to retry allows you to hold down B.
+
+Start menu: (a chooses, b goes back)
+     Play(1-1) or passkey (a enters letter, b deleted)
+    /
+Play
+    \
+     Create (Create/select doesn't work)
+      A places something, B switches
+
+  3. STRATEGIES
+
+See my TG16 Boxyboy FAQ.
+
+  4. WALKTHROUGH
+
+Level 1-01:
+
+XXXXX
+X...X
+X.01X XXX
+X.2.X X=X
+XXX.XXX=X
+ XX....=X
+ X...X..X
+ X...XXXX
+ XXXXX
+
+1 4D R U 3R 2U
+0 R 4D R U 3R U
+2 R 3D R U 3R
+
+Level 1-02:!
+
+BDBD
+
+XXXXXXXXXX
+X==......X
+X==0..X..X
+X..X1XX.XX
+X.2.....X
+XXXXX.X.X
+  X.3...X
+  X.....X
+  XXXXXXX
+
+0 2L, 2 5R, 1 1U 2L, 2 3U 6L, 3 3R 5U 5L.
+
+Level 1-03:
+
+BHBH
+
+ XXXX
+XX..X
+X.0.X
+XX1.XX
+XX.2.X
+X=3..X
+X==*=X
+XXXXXX
+
+0 1R, 1 1D, 2 1D, * 2L. 2 1D 1L. 3 1L. 1 2D. 0 3D R D.
+
+??fix on others
+
+Level 1-04:
+
+BMBM
+
+ XXXXX
+ X..XXX
+ X.0..X
+XXX.X.XX
+X=X.X..X
+X=1..X.X
+X=...2.X
+XXXXXXXX
+
+0 2D, 2 2L, 1 L U, 2 2L, 0 D 2L.
+
+Level 1-05:
+
+BXBX
+
+ XXXXXXX
+ X.....XXX
+XX0XXX...X
+X...1..2.X
+X.==X.3.XX
+XX==X...X
+ XXXXXXXX
+
+1 2R, 2 U, 1 L, 0 2D R D.
+1 3L D R.
+2 L D 4L 2D.
+3 U 4L D.
+
+Level 1-06:!
+
+BsBs
+
+       XXXX
+       X..X
+   XXXXX..X
+XXXX......X
+X...=XXX.XX
+X.X.X....XX
+X.X.0.1X=.X
+X.X..*..X.X
+X.=X2.3.X.X
+XX....X.X.X
+ X.XXX=...X
+ X.....XXXX
+ XXXXXXX
+
+1 1U 2R 3U, 0 1R 2U 1L. 2 1D 2L 1U. 3 1R 2D 1L. 1 4D.
+
+Level 1-07:
+
+BsDB
+
+   XXXXXXX
+  XX..X..X
+  X...X..X
+  X0.1.2.X
+  X.3XX..X
+XXX.4.X.XX
+X=====..X
+XXXXXXXXX
+
+4 1L, 3 2U, 1 1R, 3 4D 3L. 4 D L. 2 1U. 1 2L 3D R. (the key--place this
+before the last two.) 0 3D. 2 D 3L 3D.
+
+??put back to L7 on turbografx
+
+Level 1-08:
+
+BsHG
+
+   XXXXXX
+ XXX....X
+XX=.0XX.XX
+X==1.2...X
+X==.3.4.XX
+XXXXXX..X
+     XXXX
+
+2 1L, 3 3L, 1 1U, 2 3L, 4 4L.
+0 1D, 1 1L, 0 2L.
+
+Level 1-09:
+
+BsML
+
+ XXXXXXXXX
+ X..XX...X
+ X...0...X
+ X1.XXX.2X
+ X.X===X.X
+XX.X===X.XX
+X.3..4..5.X
+X.....X...X
+XXXXXXXXXXX
+
+4 2U, 5 4L 2U, 3 3R U R U. 1 U, 0 2R, 2 2D 3L U R.
+1 4D 2R U. 0 R 4D 3L U.
+
+??small shortcut
+
+Level 1-10:
+
+BsXW
+
+  XXXXXX
+  X....X
+XXX012.X
+X..3==.X
+X.4===XX
+XXXX..X
+   XXXX
+
+4 3R, 3 1L, 1 2D, 3 3R, 0 2D, 2 L D.
+
+[pushes box] It's heavy!
+
+Level 2-01:
+
+DBBD
+
+ XXXX  XXXXX
+XX..X  X...X
+X.0.XXXX1..X
+X..2====.3.X
+XX....X...XX
+ XXXXXXXXXX
+
+2 5R, 0 D 2R, 3 U, 2 3L, 1 D 2L, 3 D 2L.
+
+Level 2-02:
+
+DDBG
+
+    XXXXX
+    X...X
+    X0..X
+  XXX..1XXX
+  X..2..3.X
+XXX.X.XXX.XXXXXXX
+X...X.XXX.XX..==X
+X.4..5........==X
+XXXXX.XXXX.X..==X
+    X......XXXXXX
+    XXXXXXXX
+
+3 2L, 1 U, 2 1D, 5 R* U. 4 R*. 2 2D R* D R. 3 L 3D R* U. 0 5D R*. 1 2D 2L 3D
+R* D R.
+
+Level 2-03:
+
+DHBJ
+
+  XXXXX
+XXX...X
+X..0=.XX
+X..=1=.X
+XXX.*2.X
+  X...XX
+  XXXXX
+
+0 1L, 2 2U, 1 L D, 0 2R, 1 U L, 2 D, 1 R.
+
+Level 2-04:!
+
+DMBN
+
+XXXXXX...............
+X....XXX.....XXXXXX..
+X.X..0.X..XXXX..==X..
+X.X..1.XXXX.XX..==XXX
+X..234...5......===XX
+XXX..6..7XXXXX..==XXX
+..X8.9.a.X...X..==X..
+..X......X...XXXXXX..
+..XXXXXXXX...........
+
+5 2L, 7 1D, 5 R*. 7 2U R* 2D. a 2U R* 2U. 9 3R 2U R* U. 6 3R U R*.
+
+3 2U, 4 R* 1D 1R. 2 R* 2U. 3 2D R* 2D. 8 2U R* 1U. 0 1L, 1 1D R*. 0 2D R* 1D
+1R.
+map??
+
+Level 2-05:
+
+DXBY
+
+  XXXX
+  X==X
+ XX.=XX
+ X..0=X
+XX.1..XX
+X..X23.X
+X......X
+XXXXXXXX
+
+1 2R, 0 2U, 2 3U, 3 L, 1 D, 3 2U L 2U, 1 2U.
+
+Level 2-06:!
+
+DsBB
+
+              XXXXXXX
+              X..==XX
+   XXXXXXXXXXXX..==XX
+   X....X..0.1...==XX
+   X.234X5..6.X..==XX
+   X..7.....8.X====XX
+   X.9a.Xb.c.dX====XX
+XXXX..e.X.....X====XX
+X...X.XXXXXXXXXXXXXXX
+X....f..XX
+X.ghXij..X
+X...X...XX
+XXXXXXXXX
+
+Lots of blocks, but you just need to push a few into place before you can
+start in for good. Once you do that, place everything below, then fill in the
+2x4 rectangle on the right.
+
+f 1L, 7 5R, 6 1R, 1 3R 4D 1L. 0 5R 4D. 8 1D, 6 1U 4R 4D. d 3U 5R 4D. 8 3U 4R
+1L 3D. 7 2R 2U 3R 3D. c 2R 3U 4R 3D. 9 1U 8R 2U 5R 3D. 2 1D 8R 2U 3R 1L 2D. 3
+1D 7R 2U 3R 2D. 4 1D 6R 2U 4R 2D. 5 1D 3L 7R 2U 5R 2D.
+
+b 1U 3L 7R 2U 5R 2U. a 1L 1U 8R 2U 5R 1U. i 5U 8R 2U 5R. j 1L 5U 8R 2U 4R 1D
+1R. e 1L 3D 5U 8R 2U 4R 2U. f 2L 4R 1L 4U 8R 2U 4R 1U. g follows f. h follows
+g, but 1D 1R at the end.
+
+Level 2-07:
+
+DsDD
+
+  XXXXXX
+  X....XXX
+  X.0....X
+XXX.1.XX.X
+X===.2...X
+X===3X4.XX
+XXXX.X.5.X
+   X.....X
+   XXXXXXX
+
+3 U, 4 D, 5 2U, 1 R, 3 U, 0 L 3D 2L. 2 4L. 3 D L D L. 1 D 2L D. 5 5L. 4 2U
+3L.
+
+Level 2-08:
+
+DsHH
+
+  XXXXXXXX
+  X...X=.X
+ XX..0===X
+ X..1.X*=X
+XX.XX2X.XX
+X...3..4.X
+X...X....X
+XXXXXXX..X
+      XXXX
+
+4 1L, 3 2L R(3 is flipped a lot in this level,) 0 3R D, * 3D 5U. You've
+filled the corner dots, the toughest, and the rest is pretty easy. 2 2U, 3 L
+R, 2 3R. 4 R 3U, 3 4R 2U, 1 R U R.
+
+Level 2-09:
+
+DsMM
+
+XXXXXX
+X....X
+X.012XX
+X..X==XXX
+XX..==3.X
+ X......X
+ XXXXXXXX
+
+2 2D L, 0 D, 1 R 2D, 0 U R, 3 L U.
+1 U, 2 2R(D of 3), 1 D and 0 R D.
+
+Level 2-10:
+
+DsXX
+
+XXXXXXXX
+X..X...X
+X.0==1.X
+X.2=*.XX
+X.3==4.X
+X..X...X
+XXXXXXXX
+
+Get the boxes lined up:
+
+***
+
+***
+
+Then take the left ones through.
+
+0 R, 3 R, 2 D, * R. 0 L, 1 2L, 4 L, * U L.
+
+0 D 2R, 3 U R.
+
+Pay-Day. (Your guy smiles, with a 1000 above him.)
+
+Level 3-01:
+
+GBBG
+
+ XXXXXXX
+ X====.X
+XXX===0XXX
+X..1X2.3.X
+X.45..X6.X
+X....X...X
+XXXX...XXX
+   XXXXX
+
+Box 0 is tough to wiggle around, but if you sit down and see all the wrong
+ways to do it, you can stumble onto the right one eventually.
+
+4 U, 5 L, 1 2U L. 2 U, 3 2L, 0 D, 2 L, 3 2U L, 0 L 2U, 6 U 2L U. 4 R 2U, 5 R
+3U.
+
+??3 2L above
+
+Level 3-02:!?~26 not quite
+
+GDBH
+
+       XXXXXXXXX
+       X.......X
+       X.X.X.X.X
+       X..0.1X.X
+       X...2...X
+       XX.3.4X.X
+ XXX   XX.5.6..X
+XX=XXXXXX.XXXXXX
+X===..X.7.8.X
+XX=......9..X
+X===..X...XXX
+XX=XXXX..XX
+ XXX  XXXX
+
+Here you need some juggling in the final area.
+9 6U, 2 2R, 1 U, 0 U, 9 2R, 8 L 5U, 5 L 3D 7L 2U. 3 L 4D 7L 2D. 6 3L 3D 7L U
+L. 0 4D 1L 3D 7L 1D 1L. 8 1R 3D 1L 3D 7L 1U. 2 4L 5D 6L 1D 1L. 4 1D 3L 3D 7L.
+1 4D 3L 3D 6L. 9 1L 3D 1L 3D 5L 1U 1L. 7 1R 3U 4D 5L 1D 1L.
+
+Level 3-03:??19
+
+GHBK
+
+XXXXXXX
+X==0==X
+X==X==X
+X.123.X
+X..4..X
+X.567.X
+X..X..X
+XXXXXXX
+
+0 2L, 3 U, 7 U, 1 U, 5 U, 6 2R 4U, 3 U, 1 U, 5 2U, 7 2U, 2 2L U, 4 2R 2U.
+
+Level 3-04:??25
+
+GMBP
+
+       XXXXXXXXX
+XXXXXXXX.XX..==X
+X......0.....==X
+X.1.X2.X3XX..==X
+XX.XX....XXXX==X
+ X.4.5XX.X  XXXX
+ X.XX.X..X
+XX.X....XX
+X..6...XX
+X..XX7.X
+X..XX..X
+XXXXXXXX
+
+3 2D, 0 7R 2D, 5 3D, 1 6D 7U R* U, 6 L D U* R*. 2 U R* D*. 3 3U 5R D R. 4 L
+3U R* U. 5 3L, 7 U* R*, 5 D U* R* D R.
+
+??3 2D
+Level 3-05:!
+
+GXBZ
+
+...XXXXX
+...X...X
+XXXX0..X
+X==.1..X
+X==2..XX
+X==X.3X.
+X.=X4.XX
+XXXX.5.X
+..X.6..X
+..X....X
+..XXXXXX
+
+6 1R, 4 1U, 3 3U, 2 2L 1D. 1 3L. 4 1U 2L 2D. 0 2D 2L 1D. 3 1D 3L. 6 1L 4U 3L.
+5 1L 3U 2L.
+
+Level 3-06:??26
+
+GsBD
+
+        XXXXXXXX
+        X......X
+        X..0.1.X
+ XXXXXXXX.2.3..X
+XX===..XXXX.XX.X
+X====.......XX.X
+XX===..XX.45XX.XX
+ XXXXXXXX.6.....X
+      XXX.XXXX.XX
+      X.7.8....X
+      X..9.XXXXX
+      XX...X
+       XXXXX
+
+0 1L, 1 1L, 5 4U, 8 1L, 9 1R, 8 4U 8L. 6 L, 4 U L*, 6 2U L* U L. 7 R 4U L* D
+L. 9 U L 4U L*. Now pull the 5 remaining blocks D* 2L 2U L* and U L/D L as
+needed.
+
+?? what is 6L, 6L to 6 L, 4U to 4 U
+
+Level 3-07:??21
+
+GsDG
+
+XXXXXXXX
+X......X
+X.X01..X
+X.===X.X
+XX===2.XX
+ X.XX.3.X
+ X4..5..X
+ X..X...X
+ XXXXXXXX
+
+5 U, 3 2U, 2 2L, 3 3D, 4 3U, 2 L, 0 D, 1 D, 5 U 2L, 3 L 2U L.
+
+Level 3-08:??22
+
+GsHJ
+
+  XXXXX
+XXX...XXXX
+X...0.1..X
+X.2...3..X
+XXX45XXXXX
+  X..==X
+  X====X
+  XXXXXX
+
+3 L, 1 R, 3 R, 5 2D 2R, 0 4D R, 4 2D, 2 2R 3D, 3 L 2D 2R, 1 3L 3D R.
+
+?? 3 2L
+Level 3-09: (rotated 27)??
+
+GsMN
+
+...XXXXXXX
+.XXX.....X
+XX...X.X.X
+X..X=012.X
+X.X=*X.XXX
+X..==X.X..
+XXX==3.XX.
+..X=X.4.X.
+.XX.X.X.X.
+.X.5..6.X.
+.X.....XX.
+.XXXXXXX..
+
+6 2L, 5 5U, * 1D, 1 1D, 0 1L 1D. 2 3L. 4 1L, 3 2L 1U. 4 1U 1L. 6 1L 2U. 1 2U
+5D 1L 2D 2L 2U. (4 1L may make things a bit faster, but oh well.)
+
+Level 3-10:??40
+
+GsXY
+
+     XXXX
+XXXXXX..X
+X....0..XXXXXXXXXXX
+X.XX.1..XX..X.====X
+X.2.3..4....X.====X
+X.X..56.XXX.X.====X
+X..78....XX.X.====X
+XXXX..X..X..XX.XXXX
+   X.9XXXX.....X
+   Xa.b.XXXXcX.X
+  XX.X..X..X.X.X
+  X..def.......X
+  X.....XXXXX..X
+  X..XXXX   XXXX
+  XXXX
+
+0 2R, 6 D, 5 L, a 3D U, e U, f R* U* R*. 4 1L, a 1D, e R* 6U D 3R. a 1U R* 6U
+D 2R. c 1U 2R 3U D R.
+
+The rest of the squares, you can just move down the left side, (1D 1U saves a
+bit of time here) R* U* R*. So I am assuming you push the blocks in one by
+one after freeing them up. First b 2L 3D, then e D, then 9 D L 2D. These are
+the tricky ones. 5 1L to release 8, 3, 0, 1, 6, 4(can go 2D 4R 4D 3R as a
+shortcut,) then 7 2R L, 2 R, 5 D R.
+
+??dumb typos
+
+He presents a small figurine of himself to the girl, who turns away. He
+bashes his head and out comes a heart. It breaks. "Oh no!!"
+
+Level 4-01:
+
+HBBH
+
+         XXXXXXXXXXXX
+         X==..X.....XXX
+         X==..X.0..1..X
+         X==..X2XXXX..X
+         X==......XX..X
+         X==..X.X..3.XX
+         XXXXXX.XX4.5.X
+           X.6..7.8.9.X
+           X....X.....X
+           XXXXXXXXXXXX
+
+This one just takes a lot of time.
+
+3 1R, 5 1L, 3 2U, 1 L, 2 D L* U*. 0 L 2D L* U*. 1 L* 2D L* U*. 3 U L* 2D L*.
+6 2R 4U D L* D L. 9 U* L* 2D L* U*. 8 2R U* L* 2D L* U*. 7 4R U* L* 2D L* U*.
+4 1U, 5 1R U* L* 2D L*, 4 2R U* L* 2D 2L D L.
+
+??typos
+
+Level 4-02:??106
+
+HDBJ
+
+                XXXX
+         XXXXXXXX..XXXX
+         X...XX=====..X
+         X..0..XX===X.X
+         XX..1..XXX.X.X
+          X.X.2..X....X
+          X..X.3..X...X
+          X...X.4..X..X
+          X....X.5.X.XX
+          XXXX..X.6..X
+             XX..X.7.X
+              XX.X...X
+               XXXXXXX
+
+Lots of moves but the big idea is transparent. Leave the UL 0 behind at
+first.
+
+1234567 R, 7 U* L 3U L D. 6 R 4U L 3U 2L D. 12345 D, 12345 R. 5 R 4U L 3U L*.
+1234 D, 1234 R. 4 R U* L U* L*. 123 D, 123 R. 3 R U* L U* L*. 12 D, 12 R. 2 R
+U* L U* L. 1 D R* U* L *U. 0 D 2R D R D R D R D R D 2R U* L 2U.
+
+??dumb typo
+
+Level 4-03:??104
+
+HHBL
+
+               XXXXXXXX
+               X......X
+               X.0X1.XX
+               X.2..3X
+               XX4.5.X
+       XXXXXXXXX.6.X.XXX
+       X====..XX.7..8..X
+       XX===....9..a...X
+       X====..XXXXXXXXXX
+       XXXXXXXX
+
+Nice simple level here.
+
+3 1D, 9 L* U L, 8 1R, a L* D L. 8 2L, 3 3D L* U. 8 1R D L*. 5 L 3D L* D L. 1
+2D L 3D L* U. 7 1R 1D L*. 6 1R 2D L* D L. 2 R* D* L* U. 4 D* L*. 0 D* L* D L.
+
+??fix typo
+
+Level 4-04:??37
+
+HMBQ
+
+  XXXXX
+  X...XXXXXXXXX
+  X.0.1.......X
+XXXXX..2.X34..X
+X...X.XX....XXX
+X===...XX..5X
+X===X67..8..X
+X===X...X..XX
+XXXXXXXXXXXX
+
+8 R, 3 D, 4 R, 3 U, 8 2U, 5 2U.
+
+6 U, 7 4R, 6 3L R 2D. 0 R 4D U 3L R D. 1 2L R 3D 3L 2D. 2 2L 2D 3L D. 7 5L U
+4L 2D. 8 1L, 3 3D 5L U 4L D.
+
+8 1R 2D 5L U 4L. 5 1D, 4 2L 3D 5L U 3L. Last one, U L 3D 5L U 2L.
+
+Level 4-05:??37
+
+HXB!
+
+XXXXXX  XXX
+X==..X XX.XX
+X==..XXX...X
+X==.....01.X
+X==..X.X.2.X
+X==XXX.X.3.X
+XXXX.4.X5..X
+   X..6X.7.X
+   X.8..9..X
+   X..XX...X
+   XXXXXXXXX
+
+After the original shuffle, which is not hard, the rest is pretty easy too.
+
+Left column:
+2 1L, 7 D, 3 D, 1 D, 0 L* D*. 1 U L* D. 3 3U L*. 7 5U L* 2U L. 2 U L* U L.
+
+Right column:
+5 3U L* 2D. 9 5U L* D. 6 4U L*. 4 R 3U L* 2U L. 8 2U L 3U L* U L.
+
+Level 4-06:??105
+
+HsBG
+
+              XXXXXXX
+          XXXXX..X..XXXX
+          X...X...0....X
+       XXXX.X12.XX.XX..X
+      XX......X.X..XX.XXX
+      X..XXX.3X4..5..6..X
+      X===....X.XX..X...X
+      X===X......X.XXX.XX
+      X===X..XXX..7..8..X
+      XXXXXXXX XX...X...X
+                XXXXXXXXX
+
+Some preparation before the first drop, then it unwinds. Order to place
+boxes:
+
+789
+643
+521
+
+4 1U, 5 2D, 8 1R 1U, 7 4R. 6 1R, 0 1D, 5 2U. 4 3D 4L U 3L 2D R. 5 3L 2D
+follows 4. 0 2D 3L 2D 4L U 3L D R. 6 L* follows 0. 7 4L 3U 3L 2D 4L U 4L 2D.
+8 2U L* D follows 7.
+
+3 1D, 1 1D, 2 1R 1U, 3 1D 2L 1U 4L. 1 3D 2L 1U 3L, 2 D* 4L U 2L.
+
+??typo
+
+Level 4-07:!
+
+HsDH
+
+.XXXXXXX.XXXXXX.
+.X.....XXX....X.
+.X..XX.X..01X.XX
+.X2.3.4.5.6....X
+.X.7.8.X...X...X
+XX..9a.XXXXXX=XX
+X.b....X...X===X
+X.Xcd.XX...X===X
+X..e...X...X===X
+XX..Xf.X...X===X
+.XghX..XXXXX===X
+.X.....i....===X
+.XXXXXXXXXXX...X
+...........XXXXX
+
+How to fill them in:
+
+ i
+0h5
+1g6
+2a7
+3b8
+4c9
+fed
+
+Getting started is the tricky bit, and then you have a bunch of long
+maneuvers. Then there are a few finesses at the end to make things go easier.
+e 1R, c 2U, i 6L 5U 1L. You probably know how to put blocks in by now, so
+I'll just send you to the mouth of the opening.
+
+g 1U, h 1D and R. f 2D, then R. d 1R 4D, right. e 1R 3D, right. b 1R, 2 1U, 3
+1R, 9 3D 1R 3D right. g 1U 3R 3D right. 7 1R 4D 1R 3D right. b 1R 3D 1R 3D
+right. c 5D right. (note: pushing the block 1 left saves a few moves but I'm
+too lazy to retype.) a 2L 6D right. 8 2L 7D R* 3U. 2 4D 1R 5D right. 4 1U. 3
+2L D* right.
+
+5 1R 1U, 6 3R 10L D* right. 4 1D 3R 6L D* R*. 0 1D 1L 4R 4D. 1 1D 2R 3D. 0 2R
+1D 2R 2D.
+
+Level 4-08:
+
+HsHK
+
+XXXXXXXXXXXX
+XX.....XX..X
+XX...0...1.X
+XXXX.XX.23.X
+X...4.X....X
+X.567.X.XXXX
+X...X.X.8.XX
+X..X..X..9.X
+X.aX.bX....X
+X...==X.XXXX
+XXXX==.c.X.X
+X=====X.dX.X
+XX====X..e.X
+XXX==XX....X
+XXXXXXXXXXXX
+
+And the legwork keeps piling up! c 7U, 4 1L, 0 2L, 1 4L, e 2L 3U, d 1D 1R, e
+2D 1U 3L 1D 3L. d 2L 2U 3L 3D. c 8D 1U 3L 2D 1L 1D. 2 1D, 3 2L 8D 1U 3L 2D
+2L. 2 7D 1U 3L 1D 2L. 9 1L, 8 1L, 9 1D 1L 3D 1U 3L 1D 1L. 8 3U 8D 1U 3L 2D
+1L.
+
+1 4R 2D 2L 7D 1U 2L 2D. 0 follows 1. 4 1R, 6 1U, 7 1L, 4 2U 5R 2D 2L 7D 1U 3L
+2D. 6 1R, 7 1U, 6 2U and follows 4. 7 1R 1D, b 2D. 7 1R 4D. a 1D 2R 1D. 5 4D
+2R.
+
+Level 4-09:??64
+
+HsMP
+
+                 XXXXXXX
+                 X..===X
+             XXXXX..===X
+             X......===X
+             X..XX..===X
+             XX.XX..===X
+            XXX.XXXXXXXX
+            X.012.XX
+        XXXXX..3.4.XXXXX
+       XX...X5.6...X...X
+       X..7..8....9..a.X
+       XXXXXX.bc.d.XXXXX
+            X.e....X
+            XXXX.XXX
+               X..X
+               X..X
+               X..X
+               XXXX
+
+8 4R, e 2R 3D, 5 2D, 3 1L, 6 1L. 1 U* R* 2U. From here it's pretty simple
+stupid. You've arranged stuff before. You just need to move 7 and a in before
+5 and 9, respectively(they need the room on the side,) and you need to move 5
+and 9 3L 5R and 3R 5L. Go 0-3-6-2(4 1L)-4-d-8-b-c-7-a(9 1D)-e-5(U 3L etc)-9(U
+3R etc) to the upper bit, and if you want to be all orderly and safe, fill
+columns right to left, up to down.
+
+??minor dumb typo
+
+Level 4-10:
+
+HsXZ
+
+         XXXX      XXXX
+         X==XXXXXXXX==X
+         X*=*=====*=*=X
+         X.0.1.2.3.4.5X
+         X6.7.8.9.a.b.X
+         X.c.d.e.f.g.hX
+         Xi.j.k.l.m.n.X
+         X=*=*=====*=*X
+         X==XXXXXXXX==X
+         XXXX      XXXX
+
+This only looks intimidating. e k l D*, 8 2 9 U*. 1 3 U*, f m D*. d D, j D, 7
+U, 0 2U, 7 L U. *(DL) D, c 2D, *(UL) U, i D*, 6 U*, d 3L D.
+
+a U, 4 U, *(UR) U, g D, n 2D, b 3D. *(DR) D, 5 2U, h 3U. g 2R D, a 2R U.
+
+??typo
+
+Pushes box. "I'll try again."
+
+Level 5-01:??148
+
+JBBJ
+
+          XXXXXXXXX
+          X====...XX
+          X=X=X..0.XX
+         XX====X.X..XX
+         X.====X..X..XX
+         X.....X1.XX2.X
+         XX.XXX..3....X
+          X4..5.6.7X..X
+          X.X..8.9.XX.X
+          X..XXX..XX..X
+          X....XX.XX.XX
+          X..a.X..b..X
+          XXXc.d...XXX
+            X..XXXXX
+            XXXX
+
+0 1L, 4 3D U*. 2 1D 1U, b 1L 1R, 8 1L, 3 1R, 0 1U 4L. 5 3L 3D 7U. 1 4U. 6 L*
+3D U*. 9 3U, 2 1D 1U, 3 2L D 5L 3D 6U 3R U.
+
+a 1L, c 2U, d 2R, b 1R, d 4L, a 1R. c 2L 6U R U. a 1L, d 2U, a 1R, d 2L U*
+R*.
+
+1 3L, 2 1D 4L 5U 3L. a 1U 2L 6U 2R 2U. (3-2U) 1D 1L 1D L* U* 2R U. 8 2R 1U 5L
+3U 2R. 7 1U 2L 1D 5L 3U R. b 2L 4U L* U*.
+
+Level 5-02:??62
+
+JDBK
+
+        XXXXX      XXXX
+        X...XXXXXXXX..X
+        XX.0.......1..X
+         X.X.X..XXXX..X
+         X..2...XXXX3XX
+         X4.XX.X.5.6.X
+        XX.7..8X.....X
+        X...X......X.X
+        X...XXXXX9XXXX
+        XXXXX...X...X
+            X===..a.X
+            X====X..X
+            X====XXXX
+            XXXXXX
+
+2 1R, 7 1D, 8 3U, 9 2D, a 1U, 9 2L 2D R. 3 2U D, 1 6L, 3 U 2L, 6 R 3U, 5 2R.
+9 1L 3U 4D 2L D R.
+
+8 4D 3R 3D L* D*, 2 1R 1U D* 3R D* L* D*. 7 U 3R D 3R 3D 3L R 2D. 4 2D R U 3R
+D 3R 3D 3L R D.
+
+Now 0 and 1 can be moved L D R U R D R D L D, down the column in the
+remaining T, and the next 3 can be moved following them, but pushed to the
+left edge. Remember to move 3 1U 1D before moving 1.
+
+??
+Level 5-03:!
+
+JHBM
+
+........XXXXXX.....
+........X..X.XXXXXX
+..XXXXX.X..0.X====X
+.XX...X.X..X.X====X
+.X.1.2.XX3XX.X====X
+.X..X..X...X.X====X
+.X4.5..6.7.X.XX..XX
+.X.8X..XX.XX..X..X.
+XX...9aX..XXX.X..X.
+X..b...X.cd......X.
+X.e..f.X..XXXX..XX.
+X....XXXXXX..XXXX..
+XXXXXX.............
+
+Tough level ahead. It has a nasty twist at the end along with organization at
+the beginning. You need to arrange the boxes as follows after your first
+loop:
+
+..-..
+-.X.-
+.....
+.-X.-
+..-..
+.-.-.
+----.
+
+Once this is complete, there's just a lot of shuffling. You should work the
+final bit as follows:
+
+1234
+abc5
+...6
+...7
+
+The big question--where do 8 and 9 go? Along the right of the corridor up.
+Otherwise, you can't steer boxes to the last square no matter how you try.
+
+6 2L, 2 1L, 1 1D, 4 3D, b 1D, 4 2R 1D, a 2U, 9 1R, 8 2D, 1 2D, 2 1L 1D, 6 2U
+L, a 1U, 9 1U, 8 2R, (8) 2R, (1-1D) 3D 1R, 5 2L 1U, 7 6L 1D. c 1U, d 5R U*
+1L. 0 2L, 3 2D 5L. There we are--the formation. c 6R U*. 0 7D 6R 6U 1R 1U.
+(5) 5R 3D 6R 6U 2R 1U.
+
+The order for the rest of the blocks is not terribly tough to figure. I'll
+show you how I got them out. I went (a-1U) 1U, (a-3u) 1D, (1-1r) 1R 2D.
+
+(8) 1U 6R 3D 6R 4U 1R 3D. (9-1L) 1L, (f-1L) 2U, f 1L. Now (f-1U) can go 3U 4R
+3D 6R 4U 1R 1D. (b) can go 3R, 3U, etc., then (8-1D) 2U 6R. (9-1L) can go 2R
+2U etc. and now you have the top 2 rows filled.
+
+e-1R 4U 6R 3D 6R U* 1L. e-2R 1L and follows. Push the UR block 2U. e 1R 4U 6R
+3D 6R 4U 1L, and (4-1U) 3D 4R 3U etc. follows. Final block 3U. Wow. This is
+the most sophisticated example yet of putting boxes near the exit when you
+can't fit them in straight-away.
+
+Level 5-04:
+
+JMBR
+
+.............
+......XXXX...
+..XXXXX..X...
+.XX.....0X...
+XX.1..XX.XXX.
+X.2.3.X.4..X.
+XXXX.XX...5X.
+.X====X6.7.X.
+.X====X...8X.
+.X====..9a.XX
+.X===.X.b...X
+.XXXXXXc.d..X
+......X...XXX
+......Xe.XXX.
+......X..X...
+......XXXX...
+
+Leave two blocks in the UL to finish things off and you will be okay.
+
+37.1
+48.2
+59cd
+6ab
+
+2 1R, 1 2R, 3 3D 1R 1U. 7 1D, 8 3D, 7 1L, a 1U, 9 4L 1U 1R. 7 1D 6L 2U, a 1D
+L* 1U, 6 2D 5L. b 1R, c 2U 4L 1D 1L. e 4U 4L 2U. b 2L 1U 4L 1U. d 2U 6L. Now
+rotate pieces so you can push 0 down and to the UL. 8 3L, 5 4D, 4 1R. 0 6D. 1
+1U 3R 5D. 4 1L 2D. 0 4L 5U.
+
+4 1L 2D 3L 1D 1L. 5 1D 4L 1D. 8 2U 3L. (final) 3L 1U 2L. 0 4D, 2 1R 2D.
+
+Level 5-05:??122
+
+JXB?
+
+                    XXXX
+             XXXXXXXX..X
+            XX.0.1...2.X
+            X....X3..4.X
+            X..5.X..X..X
+       XXXXXXXX.6X.....X
+       X...7.....8.9.XXX
+       X...XXXXXaXXbXX
+       XX.cd.........X
+        X..XX.e.f.g..X
+        XXXXXX.X.X.XXX
+            X.h.i..X
+            X..j..XX
+           XXXX.kXXX
+           X=======X
+           X=======X
+           X=======X
+           XXXXXXXXX
+
+Nothing tricky at the end after a beginning tangle. This solution is a bit
+awkward as I should probably have dumped everything on the left first, but it
+gets the job done.
+
+5 1L, 1 3R, 7 2L, 3 1D, 4 1L, 2 2D, 1 1R, 0 5R, 6 2U, c 1U, d 8R, g 1D, a 2U.
+f 1R, e 1R, h 1D, j 4D 3L. k 3D 2R. i 5D R. h R 4D 2L. e R 7D. f L 6D L D. c
+1D 6R D* 2L D. One row.
+
+d 3L D* R*. g 1U 2L D* R. (6) 9D 2R. (6-2U) 11D R. 5 2R 8D L 2D 3L. 7 7R 6D L
+2D 2L. 8 1L 6D L 2D L. 9 3L 6D L 3D 3L. (3-1D) 2D 2L follows 9. b 2D 3L
+follows (3-1d).
+
+(4-1L) 2L 3D 2L follows 9. (4-1D) U 3L follows (4-1L) then (2) 1D 3L 3D 2L
+D*. (2-1L) R follows 2.
+
+Level 5-06:??52
+
+JsBH
+
+         XXXXXXXX
+         X......X
+         X..0...XXXXX
+         XXXX...1...X
+         X..XX2X.3..X
+         X.....X.X.XXXXX
+        XX.XX.4.5.67...X
+        X...X..X...X...X
+       XX...XXXXXXXXXXXX
+       X====X
+       X====X
+       XXXXXX
+
+Not really a hard level, but I overlooked moving 0 at the start.
+2 2U, 0 L, 2 L, 4 4U, 5 R, 6 3U. 5 4L U 3L 5D 2L. 7 2R 8L U 3L 5D L.
+
+4 4D 3R 4L U 3L 5D. 2 R 4D 3R 4L U 3L 4D R D. 3 1L, (1) 2L 3D L U 3L 4D 2L. 1
+2D 3L U 3L 4D L. 3 2D 3L 1U 3L 4D. 0 3R 4D L U 3L 3D R D.
+
+??try again *move saving
+
+Level 5-07:??`17
+
+JsDJ
+
+            XXXXX
+            X...XXXXXXX
+          XXXX.0..1...X
+        XXX...23.4.5..X
+        X...X..6X.XXXXX
+        X7XXXX..8...9.X
+        X.a..b..c...d.X
+        X..e..XXXfXXX.XX
+       XX..XX.X=====X..X
+       X..g.h.X=====...X
+       X.i...j.=====XXXX
+       XXXXXXXX=====X
+              XXXXXXX
+
+2 1D, 3 1R, 7 3D, e 1R, b 1R, h 1L, j 3R 2U L. g 1U, i 7R 2U. g 2D 7R U L. 7
+2D 6R U.
+
+++...
+++...
+.....
+.....
+
+d 2L, f 4D 2L. d L 5D L. 8 2L, c 1R 4D 5L 7R 2U. b 2L, 6 2D 2R 4D 8L 9R 2U. 0
+4D 2R 4D 2R D. 9 5L D. 4 3D 4R 3D. 5 1R, 3 1R 3D 3R. 5 4L 1R 3D 1R. g 1L 1D
+8R 1D. 4 4L 1D 2R. 3 1R 3D 4L 1D 1R. Push 2 more blocks(b, c) R* D* to follow
+these. You should now have:
+
+++.++
+++.++
+...++
++++++
+
+1 3L 1D 2R D*. 2 1R 2D 2R 3D. 8 1D 3R D. a 1L D* R*. e 2L D* R*.
+
+??typo
+
+Level 5-08:??60
+
+JsHL
+
+         XXXX
+         X..XXXXXXXXX
+        XX..XX..X...X
+        X..0X.1.2...XXXX
+        X3..4..X.5.6X..XX
+       XX..7XX.X8.9.....X
+       X..X..X.X...abc..X
+       X.d....e..fXX.XXXX
+       X.g.h.XiX..X..X
+       XX..XXX..XXXj.X
+        X..X====.....X
+        XXXX======XXXX
+          X====XXXX
+          X===XX
+          X===X
+          XXXXX
+
+That corridor above the dots is very handy.
+
+2 2R, 1 D, 4 2L, 0 1U, 7 2D, e 1R, i 3D 2L 3D L. 1 7D 2L 2D L. b 1U, 5 1R, e
+1L 4D 2L D L.
+
+8 2U 2L 8D 2L 3D. 2 4L 8D 2L 2D. a 3L, f 3U, a D 2L 4D L 3D. (9) 2L 2D 2L 4D
+2L D. (9-1u) 2D 2L D 2L 4D L 2D. 5 U 3L 8D L D. c 1R L* D 2L D*. b L* 2D 2L
+3D 2R and leave it for later. 6 2D 3L D 2L D* 2L.
+
+7 L g R briefly tangles the DL structure, then d 1U 7 4R 3D 2L untangles. d
+1D 5R 4D 3R, g 1U 4R 3D 2R, h 1L 1U 4R 3D L. 3 3D 5R 4D L. 4 R* D*. 0 2D 3R
+6D. Now 2 blocks remain--push one L D and the other D* L*.
+
+??typo
+
+Level 5-09:??112 rotated
+
+JsMQ
+
+.XXXX
+.X..XXXX
+.X0....X
+XX..XX1XX
+X.*X=X..X
+X.==*23.X
+X.=X=X..X
+XX...X.XX
+.XXX.4..X
+...X.X..X
+...X...XX
+...XXXXX
+
+* 1D, *(right) 1U. 3 2D, 2 2L, 4 1L, 3 2U 2D, 4 1D, 3 2U L, 1 2D, * 1D, 0 2D,
+* 1L, 3 2D, 2 2L, 3 2U 1L, 4 3U.
+
+??typo 112
+
+Level 5-10:??102
+
+JsX!
+
+         XXXXXXX
+         X..X..XXXXX
+        XX..X..X===XXX
+        X..0X..X===..X
+        X.1.X23.===..X
+        X..4X..X===.=X
+        X...X.5XXXXXXXX
+        XX6.......7.8.X
+        XX..X..9a.X...X
+         XXXXXX..XXbc.X
+              X......XX
+              XXXXXXXX
+
+Fill in the lone dot only when three of the rows are filled. Otherwise you
+lose valuable space.
+
+7 4L, 9 1D. 1 1D, 0 1U, 4 1U, 1 1U, 6 2U. 2 1U, 3 4R 2U. 7 1L, 5 2U 3R 2U. 7
+1U, 2 1U. 4 3D 3R 3U 3R U L U. 1 row cleared. 6 R 2D 3R 3U 3R U L. 1 R 3D 3R
+3U 3R U. 0 5D 3R 3U 4R U. Another.
+
+7 D 3L U R D 3R 3U 5R D 3L. 2 5D 3L U R D 3R 3U 5R D 2L. a 2L, 9 2U 5L U R D
+3R, a 1R, 9 3U 5R D L. a U L 3U R* D. 8 6L 3U 4R, b 2U 4L 3U 3R, c 2U 5L 3U
+2R.
+
+(Pushes box) I can't give up.
+
+Level 6-01:??134
+
+KBBK
+
+           XXXXXXXXX
+           X.......X
+           X01.23X.XXXX
+       XXXXX..X..4.X..X
+       X==X..XX.5..6..X
+       X==X.78.....X..X
+       X==X..XX9XXXX.XX
+       X==XX.XX....X.X
+       X===...XX.XXX.XXX
+       X...XX...a......X
+       XXXXXX.X...X..X.X
+            XXXXXXXX...X
+                   XXXXX
+
+Rather easy really. a 5R, 6 2L, 0 1D, 1 1R, 7 3D. 0 1U, 7 3L 4U. 0 D* 2L 3U.
+8 L follows 0, 9 1U follows 8. Now you can push everything 3L 3D 4L U* after
+the bottleneck. The rest does not contain this detail. 2 3D, 1 2L D*. 2 3L D*
+(weave here to get through a bit faster.) 5 1D 4L 3D. 3 3D follows 5. 4 1L
+follows 3. 6 1L follows 4. a 1L 5U 4L follows 6.
+
+Level 6-02:??139
+
+KDBL
+
+           XXXX
+  XXXXXXXXXX..X
+XXX...X...XX0.XXXXXXX
+X..12.X.....3.X..===X
+X.X...X...XX4....===X
+X.X...X.56.X..X..===X
+X.X.XXXX.X.XXXXXXXXXX
+X.X7.XXX.X..X
+X.X..X....X.X
+X.....8...X.X
+X.X..XXX.XX.X
+X.XXXX......X
+X......XXXXXX
+XXXXXXXX
+
+This is another level where once you get through the bottleneck passage to
+the dot room it's easy(bottom row, then columns right to left,) so I'll just
+assume you can do that.
+
+3 4L, 5 4D, 8 4L, 7 3U, 5 5L, 3 6D 1L, 4 1U 4L 1D, 0 1D 4L 5R D R. 4 1U 5R 1D
+R, 6 L 2U follow 4, 3 1R 7U follow 6, 5 1U, 8 6R follow 3, 5 1D 5R follow 8,
+2 1D, 1 1R, 7 5D etc., 1 1L 6D etc., 2 1L 5D etc.
+
+??redo
+
+Level 6-03:??24
+
+KHBN
+
+     XXXXXX
+ XXXXX=...X
+ X..X==XX.X
+ X..0==...X
+ X..X.=X.XX
+XXX.XX1X..X
+X.2....34.X
+X.X5X..X..X
+X...XXXXXXX
+XXXXX
+
+5 4U, 1 3U D L U, 5 2D, 0 2R 2U, 5 2U 3R U, 2 R 3U 2R.
+
+4 2U, 3 5L R 3U. 4 2D 6L 4R 2U. 3 4D, 2 R, 3 4U 2R.
+
+Level 6-04:??103
+
+KMBT
+
+XXXXXXXXX
+X.......X
+X.......XXXX
+XX.XXXX.X..X
+XX.X.XX....X
+X.012.3..45X
+X..X.XX.6..X
+X..X.XX..7.XXXX
+XXXX..89a.bX..X
+ X...XX...====X
+ X.X...X.X==.=X
+ X...X.X.XX===X
+ XXXXX.c..X===X
+     XX...XXXXX
+      XXXXX
+
+2 1D, 3 1R, 2 4D 1U, c 1R 1L, 7 1U, 5 1U, 4 1L.
+
+b 1D 2R 3D L. 5 5D 3R 3D. 3 1D. 4 2R 4D 2R 3D. 6 1U 2R 4D 2R 2D L. 7 1R 3D 3R
+2D. a 3U 2R 4D 2R 2D. That's all you can do this time. 0 1D, 1 R* 4D 2R D 2L.
+3 1U 3R 4D 2R D L. 0 1U 8R 4D 3R D. a 3U 3R 4D 3R. 8 4R D 2R. 2 1D 5U. c 1R
+4U 2R D R. 2 R* D*.
+
+??typo
+
+Level 6-05:??146 rotated 180
+
+KXB0
+
+.XXXX................
+XX..XXX..............
+X.0...X..............
+XXX.1.X..............
+.X..XXXXXXX..........
+.X..2.====XXXX.......
+.X..XXX===...XXXXXX..
+.XX.XX.===X..X....XXX
+.X.3XX.===X.XX..4..XX
+.X....XXXXX.XXX.X5.XX
+.X..X..X.XX.X...X..XX
+.XXXXX....X.X6.X.7.XX
+.....XX.X.....8.9..XX
+......XXX...Xa.b.c.XX
+........XXXXX...X..XX
+............XXXXXXXXX
+
+How to fill everything in:
+
+a981
+ bcd
+ 732
+ 654
+
+0 R 3D, 3 D R, 0 4D. 2 5R.
+
+8 1R, 6 1D 3L R U* 4L D 2R. a 1U 3L R U* 4L D R.
+
+4 1L 1D, 5 1U 1L, 7 2U, c 2U, b 2L U 3L R U* 4L 2D 2R. c 2D 4L follows b, 7
+4D follows c, 5 R 5D follows 7.
+
+0 4U 5R. 3 1L 4U 4R. 1 1L 2D 3R.
+
+9 1D, 8 5L R U* L*. 9 1U 6L R U* L*. 4 U 2R 5D 7L R U* L*.
+
+??get rid of 4 in orig
+
+Level 6-06:
+
+KsBJ
+
+        XXXXXXX XXXXXX
+       XX.....XXX....X
+       X..XXX...X.01.XXX
+       X.X...X..X..2...X
+       X.X345X.XXXX6XX=XXX
+      XX.......7...8.X===X
+      X..X9XaXX..X...X===X
+      X.X..b..X.X.XX.X===X
+      X.X.....X.X....X===X
+      X..XcdeXX.Xf...X===X
+      XX.........ghXXX===X
+       X.XiXjXX.Xk....===X
+       X.X....X.X.l...===X
+       X.X....X.X..XXXXXXX
+       X.XmnoXX.X..X
+       X........XXXX
+       XXX....XXX
+         XXXXXX
+
+Note: the solution below could be cleaned up if I put 9 in place and not
+i/j/m, but I'd already started when I noticed you had to clear out 0-1-2-6-8
+before placing a block on the top of the left column.
+
+3 1D, 5 1D, 4 1L, 3 1L, 5 1R, 9 2D, b 1R, e 1D, 9 1R, c 1D, d 1R, c 1L, d 1R,
+j 2D, m 1D, j 1L, o 1D, n 1R, j 1U, m 1U. Now you are out of the initial
+area. h 1D, g 1L, k 2D, l 4R. Now you can start placing pieces.
+
+h 6R U*. g 2R D 6R U*. f 1D follows g. k 3U follows f. j 5R follows k. c R*
+follows j. i 1U R* D R* then l 2R makes one column.
+
+m 4U follows i, U*. j 1L 2U follows m. 4 6D follows j. 5 L* 5D follows 4. 7
+L* follows 5. 8 L* follows 7. 2 1L, 6 1D follows 8. 1 3D L* follows 8 BUT 2D
+at the last turn and not 1D. 0 R 3D L* 6D. 2 1R 2D and now 0 R* 1D 4R 7U. 9
+1R follows 0. 2 follows 9. Left block 2D follows 9, then below that 1D R*
+etc, bottom block 1L, 1U of it 4U etc, bottom 1R 5U etc., 2L on block above
+then 3D etc, final block 4D etc. noting 2D at the last turn to fit in the
+bottom.
+
+Level 6-07:??128
+
+KsDK
+
+             XXXXXXXXXXX
+             X.....X...XX
+             X.0......==X
+             X.....X1X==X
+         XXXXXXXXXXX..==X
+         X......2.....==X
+         X.X.X.3XX.X.X==X
+         X...X4....X..==X
+        XX5X.6.XXXXXXX..X
+       XX...7..X    X.8.X
+       X...9X..X    X...X
+       X..a...XX    XXXXX
+       X.bXXXXX
+       X..X
+       XXXX
+
+Extended preparation here is needed to drop things into place, but it is not
+too laborious once you get started.
+
+5 2U, 2 R*-1, 1 U 3L, 2 3U L, 3 U R*-1 3U.
+
+4 2D, 6 1L, 4 3U, 7 2R, 4 1U R* 3U. 7 4U follows 4. 5 2D, 6 3U R* U. 9 U 3R
+4U R*. 5 D 4R 4U R* 2D R U.
+
+b 2U, a 2R, b 2R, U 3R 4U R* 2D R. a 3L U 2R U 3R 4U R* D.
+
+Now to finish, 3 3D, 2 R 2D, 1 R* D, 0 r*, 8 2U.
+
+Level 6-08:??133
+
+KsHM
+
+       XXXXXXXX
+       X===...XXXXXXXX
+       X====.....0...XX
+       X=====XX.1.X2..X
+       X=====X..X..3..X
+       XXXXXXX4.XX..5.XXX
+        X........XXX.6..X
+        X..7.X.8..X..9..X
+        X..XXX.XX..X.XXXX
+        X..X..a..b.X...X
+        XXXX.XcX..XXd..X
+         X.e....f...g..X
+         XXXXX...XXXXXXX
+             XXXXX
+
+Fill columns in top to bottom, left to right. The last two require no tricks.
+Another level with annoying busy work loops but the thinking at the start is
+interesting.
+
+e 4R, f 1U, a 1R, 7 1L 1D, 4 1D 3L, 0 1R, 1 1L 2D 3U L* 2D. g 1R, d 4U, 9 1R,
+6 2U, 5 1L, 0 L* D. 3 1L, 2 1U L*. b 1D, e 2L, f 1D 1L, c 5U, 8 1R, 4 4R 4U
+L* U L. Fill in the next column top to bottom. 7 2U, follows 4. c D 3L 4R 4U
+L*. f L 5U 3L 4R 4U L* D L. g 7L 5U 3L 4R 4U L* 2D L.
+
+a 1L, through the loop, and start filling in the next column top to bottom. 8
+2L, etc. b 1D 3L etc., e 1R 5U etc.
+
+(the next part may be easier if we move 6 through the loop first and go over
+the top)
+
+Next column, d D* 6L etc., 9 2L D* 6L etc. 6 3D L D* 6L.
+
+Last column, 3 2R D* 6L etc., 5 R D* 6L etc.
+
+??typo
+
+Level 6-09:??113
+
+KsMR
+
+            XXXXXX
+            X....X
+          XXX.XX.X
+        XXX..0..1XXXXXXX
+        X...2.3..X..===X
+        X.X4.X..5X..===X
+        X.X..X6.....===X
+        X.X7.X...X..===X
+        X.X.8X.9aX..===X
+        X.X..Xb..XXXXXXX
+        X.X.c.d.XX
+        X.X..e..X
+        X.XXX.XXX
+        X.....X
+        XXXXXXX
+
+Fill in columns right to left, up to down. That's easy enough to fill in, and
+you've done it before, so I will direct you to the entry.
+
+8 1U, c 1U, d 1R, b 1U, a 2U R, 5 D R, 9 3U, d 2U, e 1L, b 1D, d R 2U R U R,
+9 3D R 2U R, b 1D 1R 3U 1R 1U 1R, 6 4D R 4U 2R, 0 2R, 1 3D R, 0 R 3D R, 3 2R
+2D R, 2 4R 2D R, 4 1U 5R 2D R, 7 3U follows 4, 8 4U follows 7, c 4U follows
+8, e 1R 1U 2R 4U 2R.
+
+??typo
+
+Level 6-10:
+
+KsX?
+
+        XXXX
+        X..XXX
+        X.0..XXX
+        X.1.2..XXX
+        X.3.4.5..XXX
+        X.6.7.8....X
+        X.9.a..X...XX
+        X.b..XX.cde.X
+        X..XXXX.....XX
+        XX.X.X=fghij=X
+         X.XXX=======XX
+         X...=*******=X
+         XXXX=========X
+            XXXXXXXXXXX
+
+9 1R, b D, 3 1R, 6 1D, 3 2U, 2 1R, 7 1R, 4 1D, 7 1D, 8 3R. That gets you to
+the DR without "casualties." Then c 1D, f 1D, *(L) 1D R*. *(R) 2U, *(UL) L U.
+*(2nd right) D, *(R) 2R and push each other D L*. e 1D, j 3D. d 1L, h 3D. i R
+2D R, e 4D, d 1R, g 2D R*, c 2D 3R(to the niche,) d D* R*.
+
+The rest of the level consists of pushing blocks into the bottom. You want to
+push them 1L of where 8 is, then down and L/R as need be. Push (7) 4R 5D 3R,
+(9) U 6R 6D 2R, b 3U 6R 5D 2R. 8 L D* 3L, 1 1R, 0 3D 6R D* L*, 1 1R 2D 6R 5D
+2L, 2 1L 3D 6R 4D R 2D, 5 2L D 4R 4D R D and the remaining few should follow
+the same pattern, but you just have to push 2 of them 1L before the end.
+
+??typo
+
+(pushes box) $1000 $1000 I'll succeed soon.
+
+Level 7-01:!
+
+LBBL
+
+.........XXXXXXXXX
+.........X.......X
+.........X.01234.X
+.........X.5.6...X
+.....XXXXX..7.8..X
+.....X...XXXX.XXXX
+.....X.........X..
+.....XXX.XXXX..X..
+......X====XX.XX..
+......X====X..X...
+......X====X..X...
+..XXXXX=XXX...X...
+..X..XX.XXX.XXX...
+..X.9XXaXXX..XX...
+..X......b...X....
+..X.cX...XX..X....
+..XX.XXXXXXXXX....
+...XXX............
+
+1d42
+8c53
+9b76
+a
+
+c 1U 3R, b 2R, c 1R, a 4U 2D. 8 1R, 7 1L, 1 1D, 3 1D, 4 1D, 2 1R, 6 7D 4U 6L
+R 2D 2R 1U. You'll repeat this with 0-8 so I will just show how to get to the
+exit of the UR room. (3) 1L 4D, 0 2R 4D, 7 2R 2D, 8 2L 2D, 1 1D 1R 1D. Now to
+clear the bottom. b 1U, c 1L 1R, a 3U. b 1D 1U, c 1L 5U. b 1D 4L 4U. a 1D 3R
+3U. (5) 2R 2D, (6-1R) 1D 1L 1D, (6-2R) 2L 2D.
+
+Level 7-02:??144 rotated
+
+LDBM
+
+.XXXXXXXX.
+.X======X.
+.X==XX==X.
+.X======X.
+.X==**==X.
+.XXX==XXX.
+.X..01..X.
+.X......X.
+.X.2345.X.
+XXX....XXX
+X..6789..X
+X........X
+X.abcdef.X
+XX......XX
+X.ghijkl.X
+X........X
+X..XXXX..X
+XXXX..XXXX
+
+k 1U, i 1U, j 1L, i 2L, b 1U, d 1U, c 1R, d 1D, 8 1U, 9 1R, 8 2L.
+
+5 2U, 1 1U, 0 1L, * 1U 1L 2U 1R. Other * 2L. * below 2 1R 2U 1L. Back to the
+other *, 1R 1D 2U 1L 2U. 0-1L R 3U 2L 2U, 1-1R L 3U 1R 2U. 4 U* 2R U*. 3 U*
+2L U. 2 2R 5U 2L 1U. 7 U* 2R U. (d) U* 2R U.
+
+(i) U* 2L. (l) 2L U* 2L. (k-1U) 2L 9U 2L. (f) 1U, (e) 2L 8U 1L. (9-1R) 2L U*
+2R. (f-1U) 1U, (e-1U) 1L 7U 2R. (9-1R) 2L 6U R. 6 1L. (6-1U) 3U 2R 3U 1R. (6-
+1D) 5U 1R 3U. 6 2R U*. h U* R U. g 3R U*. a 3R U*. (g-1U) 3U 3R U*.
+
+Level 7-03:??149
+
+LHBP
+
+.....XXXXXXX...
+.....X..X..X...
+.....X.0...X...
+....XXX.XX.X...
+.XXXX.1..X.XX..
+.X.......X..XX.
+.X.2.3XXXX.4.X.
+.X.56.X..X..7X.
+.X8..9...Xa..X.
+XX..bcX...de.XX
+X.fg..X..X..h.X
+X.....XXXX.i..X
+X..XjXX==XX...X
+XXX.=X====XXXXX
+..X.=======XX..
+..X====...==X..
+..XXXXXXXXXXX..
+
+0 3R 4D, 4 1D, 7 2D, e 1D, d 3L, i 1R, 9 2L, b 1D, f 1D 1U, j D* R*. c 1U, 6
+1U, b D* R*. c 1D, 6 8D R*. f 1D 2R 3D R* U. g 1R 4D 4R 2U. 8 3D 2R 3D 4R 2U.
+2 1R 8D 3R 2U. 5 1R 7D 3R 1U. 8-1R 1R 6D 2R 1U. d 1U 3L D* 4R. (c) 1U 1L D*
+2R. (3) 2D 1L D* 1L. 1 1R 1D 2L 3D 1L D*. DL box 1L, other box 2L.
+
+e-1U 1D, d 1D, (e) 1L, d 3L 1U 3L D* R*. (d) 1D 3L 1U 3L D* R*. (a-2U) 3D 3L
+1U 3L D* R*. (h-1L) 2U, h 2L 1U 3L 1U 3L D* 2R. (e-1U) 1L 1D 3L 1U 3L D* R. i
+1L 1U 1L 1U 3L 1U 3L D*. (h-1U) 1D 2L 1U 3L 1U 3L D*.
+
+Level 7-04:??115
+
+LMBV
+
+           XXXXXXXXXX
+           X==..X...X
+           X==......X
+           X==..X..XXXX
+          XXXXXXX..X..XX
+          X............X
+          X..X..XX..X..X
+        XXXX.XX..XXXX.XX
+        X..0..XXXXX.X..X
+        X.X.1..2..X.3..X
+        X..4..5...X...XX
+        XXXX.XX.XXXXXXX
+           X....X
+           XXXXXX
+
+0 1R, 1 1R, 5 1L, 2 1R, 1 1R, 5 1L 1D. 4 1L, 1 2L, 2 2L, 4 6R. 0 2L.
+Beginning work done. On to busy work.
+
+3 R 4U 3L 3U L* U. Now 1 U* 9R 4D L R 4U 3L 3U L*.
+
+5 U* follows 1, but ends 1D. 4 4L U* follows 5, ends 1R of it. 0 2R U*
+follows 4, ends 1U of it. 2 4L U* follows 0, ending 1U of it.
+
+Level 7-05:
+
+LXB1
+
+                XXXX
+           XXXX X..X
+         XXX..XXX0.X
+        XX......1..X
+       XX..2.34XX.XX
+       X..X5XX.....X
+       X.X.6.78.X.XXX
+       X...9.X..X.a.XXXXX
+      XXXX....X..bc.X...X
+      XXXX.XX.d.........X
+      X=....XXX..XXXXXXXX
+      X==.==X XXXX
+      X===X=X
+      X=====X
+      XXXXXXX
+
+d 8R, a 1L, c 1U, b 1L, a 2D 1R, 0 6D, 1 1R 1U. 4 1U, 8 2U, 7 2R, 6 2R. 9 1L
+4D 1R 2D. 2 1L, 5 3D 1L 3D 3L 2D. 2 1R 4D 1L 3D 3L 1D. 6 2L 2D 1L 3D 2L 1U
+1L. 4 2L, 8 1U, 3 2L, 3 4D 1L 3D 3L.
+
+(UL) 1D 1L 4D 1L 3D 1R 1D. (UL) 2L 1D 1L 4D 1L 3D 1L 2D 1R. (top) 1D 5L 1D 1L
+4D 1L 3D 1L 2D. 7 1U 1L 1D 3L 2D 1L 3D 1L 1D.
+
+(b) 2U, (L) 1L 3U 1L 1D 3L 2D 1L 3D 2L 2D. (bottom) 3L 4U follows b, (DR)
+repeats. (top) 4U 1D 5L 1D 1L 4D 1L 3D 1R. (final) 1L 5U etc. follows (top).
+
+Level 7-06:??118
+
+LsBK
+
+               XXXX
+               X..XX
+               X...XX
+               X.01.XX
+             XXX2..3.XX
+          XXXX....4...X
+        XXX..X.XXXXX..X
+        X....X.X====5.X
+        X.X...6.====X.X
+        X..7.X.X=*==X.X
+        XXX..XXXX.XXX.X
+          XXXX..8..XX9XX
+             XXX.a.....X
+               X..XX...X
+               XXXXXXXXX
+
+8 1R, a 4R L, 9 5U, 5 2L. * 2R, 6 3L, 7 1L 2R, 6 1U, 8 D 3U, a R 4L, 8 1R, a
+4U L D. 5 2L. 9 6D 4L, 4 2R, 0 1U, 013 1D, 4 2D R 5D. 3 R 2D. 9 4U, 4 4L, 9
+2R. 4 4U R.
+
+3 R 5D 4L, 1 D 2R 3L, 2 D 3R 2D 2L, 0 2D 3R 2D 1L, (a) 4U, (7-1R) 1U R*, (7-
+2U) 2D 1R 1U R*.
+
+??improvement
+
+Level 7-07:??191
+
+LsDL
+
+       XXXXXXXXXXXXXXXXXX
+       X.........XX.X===X
+       X.0.12X....3.X===X
+       X.4...X5XX67.X===X
+       X.89Xa........===X
+       X.b.c.dXe.XXXX..=X
+       X...XX.......f===X
+       XXXXXXXXXXXXXXXXXX
+
+Clear out the left first so you can shuffle the boxes along the bottom as
+need be.
+f 3R, 3 3L, d 1U, c 2R, a 1D, d 8R 3U. c 1U R*-1 3U. a 1R 1U R*-2 3U. That's
+one row.
+
+2 3D 1R 1U R* 2U. 1 follows 2, lands 1L, then 0 3R, follows 1, lands 1L.
+Another row.
+
+4 3R 2D 1R 1U R*-1 2D. 9 1U 2R 2D 1R 1U R* 1D. b 4R 1U R*-1 1U 1R. e 1D 1L. 8
+1D 4R 1U R*.
+
+5 1D R*, 3 1L 2D R*, 5 1U, 3 1U. You can move everything else to the center
+now, then e R* to win.
+
+??bad typos
+
+Level 7-08:??162
+
+LsHN
+
+               XXXXXXXXX
+             XXX...X...X
+             X.0..1.23.X
+       XXX XXXXXX......X
+       X=XXX...XX..XX4.X
+       X=====*=..XX.5..X
+       X.*XX..X6.X..7..X
+       X...X..8..======X
+       XX.9XX..XXXXXXXXX
+        X.a.XXXX
+        X.b.c.X
+        X.....X
+        XXXXXXX
+
+0 2R, 1 D L, 4 2D, 5 2R 2D, 4 2U.
+
+8 R*, * 2R, * 1U 4R 5L U, a L 4U 4R 2D R, b L 5U 4R D, c 3L 5U 4R, 9 D L 3U.
+a 5L. (8) 5R, (6-1U) L*, (6-2L) U 3L. 7 1L, (7-1L-1D) 6L 2U 2L. 7 1D 6L 2U
+1L. 4 2D 2L 1D 6L 2U. 6 1U 1L.
+
+3 4D 2L 1D 2L. 2 1R 4D 2L 1D 1L. 0 4R 4D 2L 1D. 1 1U 4R 4D 1L 1D.
+
+Level 7-09:??
+
+LsMT
+
+                 XXXXXX
+                XX....X
+               XX.....X
+              XX..01..X
+             XX.23..4.X
+             X.5....6.X
+      XXXX   X...78.XXXXX
+      X..XXXXXXXX.XX....X
+      X==...........9ab.X
+      X=X.XXXXXXX.XX...XX
+      X=X.XXXXXXX=.Xc.dXXX
+      X===========.X...e.X
+      XXXXXXXXXXXXXX..f..X
+                   XX..XXX
+                    XXXX
+
+a 1D, 9 4L, 7 1U 1R, 3 U, 0 U, 1 R. 9 1R 3U, 5230 R, 032(b D*)5 L, b 9L. b 6L
+and repeat the process, this time b L* at the bottom. That's the only really
+tricky part. c 1D, a 1U L* D*. c 3U L* D*. d 2U L* D. f 4U L*. e 6L 1R 3U,
+5230 right, 5230 left, f D* L*.
+
+7 L D* L*. 8 L D* L*. 0 D* L D* L*. 3 D* L*. 5 2R D* L*. 2 R D* L*. 1 3L D*
+L, 4 3L D*, 6 3L D*.
+
+??typo
+
+Level 7-10:
+
+LsX0
+
+         XXXXXXXXXXXXXX
+         X...XX.======X
+         X..XXX.==X=X.X
+         X.0X..==XX=.=X
+         XX.X.1X.X....X
+         X.2..3....X.XX
+         X.4X.X.5XXX6.X
+         X..X.X.7..X..X
+         X.8X.XX9X.Xa.X
+         X.b...X......X
+         XXX...X.XXc.XX
+           XXXXX.....X
+               XXXXXXX
+
+b 2R 5U, 3 2R, 7 R, 9 2D, 6 3U R U, a 5U L U, 3 1R, 5 5U, 9 4U, c 1U 1R 6U L,
+6 D, 5 5R, 9 U* R*, 3 L U* R*, 7 L U* R*, 2 5R 4U R, 4 U 5R 4U, 8 3U 5R 3U R,
+0 U 4D U 5R 3U, b 1D 1L 4R 2U, 1 U R.
+
+New present, luggage or something. She ignores it again. His heart breaks.
+"What?"
+
+Level 8-01:?166
+
+XXXXXXXXXXXXXXXX
+X..............X
+X.X.XXXXXX.....X
+X.X..0.1.2.3X..X
+X.X...4.5...XX.XX
+X.X.X6.7.8XXX===X
+X.X...9.a..XX===X
+X.XXXbcd.e.XX===X
+X.....X.XX.XX===X
+XXXXX...XX.XX===X
+    XXXXX.....XXX
+        X.....X
+        XXXXXXX
+
+Here's what to do: fill in the right column, then the left column, then the
+center one. First to bust out from the mess you're in.
+
+5 1R, 4 1L, 0 L, 7 1L, d 1D, a 1U.
+
+3 U 3R D* R. 2 2R U 3R 6D R. 1 4R U 3R 5D R. a 2U 3R u 3R 4D R. 5 1L, 8 2U 2R
+U 3R 4D U R.
+
+e 1R 3D 3R U*. 5 3D 2R follows E. 4 4R 3D R 3D 3R 3U. 9 3R 1D 1R 3D 3R 2U. d
+2U 2R D R 3D 3R U.
+
+0 R* 1U 3R D*. 6 2U 6R U 3R D*. b 4U follows 6. 7 2U follows b. c 1R 4U
+follows 7.
+
+**gah typo
+
+Level 8-02:??76
+
+MDBN
+
+              XXXXXXX
+        XXXXXXX.....X
+        X.....X.0.1.X
+        X23.X...XXXXXXXXX
+        X.XXX======XX...X
+        X...4======XX.X.X
+        X.XXX======.....X
+       XX...XXXX.XXX.X5XX
+       X..X6...X..7..X.X
+       X..8.9ab..X.cXX.X
+       X...d.e.XXXfg.X.X
+       XXXXX.....h...X.X
+           XXX.XXX...X.X
+             X.....X...X
+             XXXXXXXX..X
+                    XXXX
+
+2 3D, 4 2R U L. 2 3D, 6 D, b 3D, 7 2L 4U 2R. h 2R, f 2U 2L 3U 3L. g L 2U 2L
+3U 2R, c U 3L 4U 2L, h L 3U 2L 3U 2L.
+
+e 1R, a 2D 5R 3U 2L 2U 6R. b U 4R 3U 2L 4U R. e 1D 4R 3U 2L 3U R. d 3R D 4R
+3U 2L 4U. 2 D 5R D 4R 3U 2L 3U.
+
+0 L 3D, 1 3L 2D. 3 L 7D 5R D 4R 3U 2L 2U L*. Repeat for 8, 6, 9.  Then a L*
+and 5 U L*.
+
+Level 8-03:
+
+MHBQ
+
+             XXXX
+      XXXXXXXX..XXXXX
+      X.........X...X
+      X....X.XX..X..XXXX
+      XX..X.....X......XXX
+       X...XX...X.012X...X
+       X.........X...3.4.X
+       X..X..X.X.X5X..X.XX
+       XXXX..6.7.X...8..X
+        X.9.XXXXX.XXX.aXX
+        X..===========.X
+        XXX..XXXXXXX..XX
+          XXXX     XXXX
+
+0 2U, 3 2L, 5 3U 3R, 2 2D, 4 1L, 8 1L, a 1U. The right is clear enough. Now
+work on the left--basically you just have to place the boxes right and then
+push everything D R. 9 R 3U 2L U* R* 3D. 8 1R 2D 10L 4U 2L U* R*. 6 2L 2D 10R
+3U, 7 2L, 9 D L U L, 8 D* L D. Bring 6 back where 9 was. ??Have 8 follow: 1L
+1U 3D etc.
+
+2 1D 1R 2D 10L U* 2L U* R*. (1-1D) 1R 2D 1R 2D 10L U* 2L U* 2R. 1 1R 3D 1R 2D
+10L 4U 2L 4U. o 2D 2R 3D 1R 2D 10L 4U 2L 2U. 4 1R 3L 2D 1R 2D 10L 4U 2L. (8-
+1R) 1L 2D 10L 3U. (2-1R-1U) 2L 2D 1R 2D 1R 3D 11L 11R.
+
+Now bring the others back to the line and right--3U of the dot, 2U 2R, 3U3R,
+5U4R(D L 2D 3L 2D), 5U2R, the UR, then work left then down.
+
+4 2L 2D R 2D 10L 4U. 0 1R 3D 1R 2D 10L U* 2L 2U, 8 2D 2R 3D 1R 2D 10L 4U 2L,
+1 1R 2D 1R 2D 10L 3U, 5 2L 2D R 2D R 2D 11L 11R. That's your first one.
+
+Now put the rest in order: 3D 9R, 2L 2D 8R, D 3L 2D 7R, D L 2D 3L 2D 6R, D R
+2D 3L 2D 5R, 4D L 2D 3L 2D 4R, 3R 4D L 2D 3L 2D 3R, 5R 4D L 2D 3L 2D 2R, and
+from the DL 5R 2D 3L 2D 1R, 2D 5R 2D 3L 2D.
+
+Level 8-04:??69
+
+MMBW
+
+             XXXXX
+           XXX...XXX
+          XX...0.1.X
+          X..XX.XX.XX
+          X.2=X=3...X
+          X.X=X*X...X
+          X.4===..XXX
+          XXX5X.XXX
+            X...X
+            XXXXX
+
+4 2R, 0 1L, 3 2R, 5 2U, 2 1R. 0 1R 1D, 4 1L, * 1D 1L. 3 2L. 1 2L R, 0 3D. 3
+2R 3L, 1 L R, 3D, 1 L 2D.
+
+Level 8-05:??140
+
+MXB2
+
+       XXXXXX    XXXX
+       X....XXXXXX..X
+       X.X.0........XX
+      XXXXX1.2.XXXX..XX
+      X....3...X......XX
+      X..45.X.XX6XXX78.X
+      X.....9*=*==X....X
+      XXXXXXX====*X.a..X
+            X*==*=X.XbXX
+            X====*.c...X
+            X=====X.defX
+            XXXXX.X.X..XX
+                X.X.g.h.X
+                X..i....X
+                X..XXX..X
+                XXXX XXXX
+
+The blocks already in the center force you to work a certain way to untangle
+things.
+
+Start with:
+
+=====
+***=*
+***=*
+
+Get the bottom 2 rows, with a stray block coming from the bottom. Then take 6
+from the top and put them 3R, 3R2D, 3R1D, then left along the top. You need
+to slip one block in from the bottom as the very top block must circle around
+to the right.
+
+0 2R, * 1D. *(center) 1D, *(1R of it) 1U. * 2L U. 6 4D L 2U L. Remaining * R
+3D L 2U.
+
+8 1D 1U, c 1D, e 2D, h 1D 1U, i 2L 4U, 8 1D 1U, i 2L U.
+
+Now just put the bottom stuff in the bottom two rows. h D 5L 4U 4L.
+
+f 3D 5L 4U 2L. c U 4L. b 2D. 8 4D 4L 1D 3L. b 1U 4L 1D 2L. h 1U 4L 1D 1L. a
+1L 2D 3L 4U. 7 2D 1L 2D 3L 1D. a 3D. 0 R* 2D 1R 3D 1L 2D 3L. d 1R 1U 4L. g 1L
+1D 2L 3U.
+
+3 1L, 9 R*. 2 3D 3R 1D. 4 1D R*. 3 3R 2D 2R. 5 1D 4R. 1 3D 2R.
+
+Level 8-06:
+
+MsBL
+
+You have a lot more boxes to separate and rejoin than usual, but fortunately
+you can tackle one diagonal all at once.
+
+(rightmost, 1U1L) 1U, rightmost 2R, then pull the other box 1D. It is a long
+walk and you will have to exercise some care not touching any boxes. Push all
+on the UR diagonal 1R. Go to the next diagonal below it and push every one of
+those up--from 5R1D of the center to 4U. Push 2D to cover the center, then gn
+to the top and push 2D. Push the diagonals left, bottom one first. Push the
+rightmost block on the diamond 2D, leaving 3L and 2L pushes.
+
+Level 8-07:??129
+
+MsDM
+
+            XXXX
+            X..XXXXX
+           XX0.XX..X
+           X..1.2..X
+           X...XX3.X
+           XXX=XX.XXX
+            X===4.5.X
+            XX==....X
+             XXXXXXXX
+
+1 1L, 4 3L, 5 3L, 3 U 4D R, 5 R.
+
+2 1R, 3 2L, 2 1D, 5 2R 4L, 3 1L, 2 U 3D, 5 1D, 1 4R, 0 2D, 2 1R, 1 3L 1U 4D,
+0 1R 1D, 2 3L.
+
+2 R 2D, 1 3R, 2 2U 2D, 1 3L, 3 2L, 2 2U 2D, 5 2R 4L, 2 2U 3D, 5 D. 2 1R, 1
+4R, 0 2D, 1 3L U 4D, 0 R D. lower blocks L*.
+
+??must be quicker way
+
+Level 8-08:
+
+MsHP
+
+         XXXXX
+         X...XX
+         X....X  XXXX
+         X.0..XXXX..X
+         X..12.3...4X
+         XXX..X5....XX
+          X..XX..6.7.XX
+          X.8..XX.XX.=X
+          X..X9XXa..X=X
+          XXX...b==XX=X
+           X....X=*===X
+           X.cd.X=====X
+           X..XXXXXXXXX
+           X..X
+           XXXX
+
+1 2U 1L, 2 1U, 3 2R, 5 U 4L, 6 1L, a 1D, * 1D 1R, a 2U, 7 1L, 8 U, 9 2D, b 2R
+D, * R 2L, a 2D, 8 D U, a R. 7 L D, 4 2D, 8 D U, b(center *) 2R. 4 1L. 3 1R,
+a 2U L. Now you are ready to fill in the dots.
+
+* R 3U, * D 3R 2U. c D, d L, 9 U 4R D 3R U. d 1R, c 2U R, d 1L, c 1U 4R D 3R.
+* R*. d U R U 4R 2D 2R. This clears the DL.
+
+7 L 3D, 8 D U, 7 R 2D R, 3 2D L 3D, 8 D U, 3 R D 2R. 5 7R 2D L 3D, 8 D 3U, 5
+R D R. 8 L 7R 2D L 3D R 2D. Then there are two blocks you can dump R 6D and R
+4D on the dots. 2 D 5R 2D L 3D R D. 1 R 2D 6R 2D L 3D R and 0 D 7R 2D L 3D R.
+
+??typo
+
+Level 8-09:
+
+MsMV
+
+        XXXXX XXXX
+        X===X X..XXXX
+        X===XXX..0..X
+        X====XX.1..2XXX
+        XX====XX...3..X
+        XXX===.XX.4.5.X
+        X.XX....X..6..X
+        X..XX.X.XXX.XXXX
+        X.7.X.X8..9....X
+        X..a...b....c..X
+        X...X.d.ef.g.XXX
+        X..XXXXXX..XXX
+        X.XX    XXXX
+        XXX
+
+
+a 1L, b 1R, 8 1U, 6 1U, 1 1U, 3 2L U, 6 U, 9 R 3U.
+
+f 1U, e 2R 1U, f 1D, d 1R, f 3L 4U L U L U L 2U L. c-2L and c follow, onto
+the top row. f 1U, then f-2L 1U etc, then g 2L U etc. gets the next row. a 3R
+4U L U L U 2L, then 7 1D follows a. 8 goes 2D 2L 4U L U L U.
+
+f 1U, e 1R, d 1R, b 1U. f R 5L 4U L U L U L 2U L. e U 4L follow f. c 7L 4U L
+U L 3U, 1 row done.
+
+d 2R U 4L 4U L U L U L U L. g 2L U 4L 4U L U L U L U.a 4R L 4U L U L 2U.
+
+7 D 4R L 4U L U L U 2L. 8 2D 2L 4U L U L U L. b follows--row 3.
+
+Now place the final blocks as follows:
+
+  =    1
+==== 2345
+ ===  678
+3 1R, 6 through the wringer. Then (2) D and through, 4 1R D, 5 1L D, 3 1L D,
+2 2R D, (1) 1D 3R etc., (0) 1L 1D 3R etc.
+
+Level 8-10:??158rot
+
+MsX1
+
+....XXXXXXX.....
+....X...X.X.....
+.XXXX.X.X.XXXXX.
+.X....X.......X.
+.X.0X1XXXXXXX.X.
+XX2...X==X==X3XX
+X....45=====X..X
+X.6.7.X=====89.X
+XX...XX===X=X..X
+.X.a..XX===XXb.X
+.X.XX.XXXXXXX..X
+.X......c.d.e.XX
+.XXXXXX...f.X.X.
+......XX.X.g..X.
+......X.hi.j..X.
+......X...k...X.
+......XXXXXX..X.
+...........XXXX.
+
+0 4D, 6 1R, h 1D, i 1R, k 3R, g 1L, c 4L, d 2L, e 2L, b 3D, 9 1D, 8 2L 2R 1D.
+9 1U 4L 1U 2R 1U. b 5U 4L 1U 1R 1U. k 8U 4L 1U 2R. (d) 2R, (c) 2R, 7 1U, (7-
+1R) 1L, 3 2D 4L U R...you have a loop.
+
+1 2U, 4 2U, 5 2R 2D R D R. You will want to leave a passage from the right as
+you fill everything else in.
+
+(4-1L) 4R 3D, 5 2D 3R 1D 1R 2D. 4 4D 3R 1L 2D. (e) 1R 3U. (d) 3R 3U. k R* 3U.
+d 1U 5L 1U 6L. c 6R. (9-1U) 1D 5L 1D. (f-3R) 5U 5L 1R 2D.
+
+(7) 1U 4R 1L 1U. (2-1D) 7R. (2) 1D 6R 1U. (a) 1L 3U R*, a-1U) 2U R*.
+
+(d) 3R 4U L*. (j) 3U 2R 4U L*. (j-1L) 3R 7U L*. (f) 1R 1U 2R 4U L*. (f-1D) 2U
+3R 4U 2L.
+
+(Pushes box, sees person in distance) Who's that?
+
+Level 9-01:
+
+NBBN
+
+.XXXXXXXX....
+.X.XX...XXXX.
+.X.0...1...X.
+.X..2.3.456X.
+.X.78X.X...X.
+XX9....a...X.
+X..b..cdefgXX
+X.hXXXX.X...X
+X..i====X...X
+X.XX====Xjk.X
+X.XX====...XX
+X...====X..X.
+XX.X====XlmX.
+.X.X====X..X.
+.X.........X.
+.XXXX.XXnXXX.
+....X....X...
+....XXXXXX...
+
+0 3R, 1 1D, 5 2D, g 2D, j 1D, k 1L, j 3L 2U. k 1D 3L U. g 1L 2D 4L 3D R. l 2U
+4L 2D R. m 3U L D 4L D R. n 1U 3L 4U L D L.
+
+6 6D L D 5L 3D. 5 R follows 6. f 4D 5L 1U. i 2R, h 1D 2R. b 1R. a 2R 5D 5L. n
+1R. Rows i and 7 are complete, and 1-3 are easy.
+
+d 7D, e L 6D, c R 5D. b 3R 3L(leave the path up.) 4 3D L 2D. 9 1D 7R 4D 3L. 0
+1R, 3 3D 3R 4D 2L.
+
+c 2R D* 4L U*. 0 1D follows 1. 2 3R follows 0. 7 U R follows 2. 8 1U follows
+7.
+
+Level 9-02:??135
+
+NDBP
+
+                XXXX
+          XXXXXXX..X
+          X.....0..X
+          X...1XX.2X
+          XX3X===X.X
+           X.4===..X
+           X.X=.=X.XX
+           X...X.X5.X
+           X6..7....X
+           X..XXXXXXX
+           XXXX
+
+0 4L, 1 2D, 2 1U, 0 3R. 3 1U 1R, 1 2U, 4 2R 1D. 6 2U, 7 3L, 5 D 3L, 2 6D. 1
+2D R, 0 3R, 1 2R.
+(3-2D) 2U, (1-1R) R 4D 2U R. (3) 1U 1R. (6) 4U, (7) 3L, (5-1D) 3L.
+
+(7-2U) R D. (7-3U) R U. (1-1L) R 4D 2U R U. (3) 1U 2R 4D. Push each block you
+can 1U/1L onto a dot. (6) 5U 2R 2D R. (7) 3L 5U 2R 2D. (2) D* L* 5U 2R D.
+
+Level 9-03:??170
+
+NHBR
+
+          XXXXXXXXX
+        XXX...XX..XXXXX
+      XXX......X..X...XXXX
+      X..01.X2.X..X..===.X
+      X.X..3X.4XX.X.X=X=.X
+      X..XX.X5..X....===.X
+      X.6X....7.X.X.X=X=.X
+      X....XX..XX8.9.===.X
+      X.a.XX...X..XbX=X=.X
+      XX.cd..e...f..g===.X
+       Xh..XXXXXX....XX..X
+       X...X    XXXXXXXXXX
+       XXXXX
+
+I garbled this a bit by not taking the easy way, but it is not too bad.
+
+5 2D, c 1D, a 1U, 2 1U 1L, 3 1D, 1 1D, 0 1R, 7 2L.
+
+f 1R, g 3R 5U. f 5R 3U. 8 1U, 9 2R 2U 3L, b 1U 1L. 8 4U 7D 2R 3U. e 10R U.
+
+The plan here is to keep the 2nd-bottom row free until the very end, but fill
+everything else in. UR* U 3L, bottom u 2L D, medium U 2L D. Top R D. Top
+block 4R, next U 2R. You want the blocks to be between the 2 walls on the
+left column. Then you can fill things top to bottom, neglecting the 2nd-
+lowest row. The blocks already on the right can go wherever. Then you can
+pull d right, then c, (7-2R), (4), (7-1L-1D), (2-1U-1L), (3-1D) D 3R 3D, 0, 1
+follow.
+
+For the final 3, just push 2U 4R at the intersection. (6-1D) 1R 6 2D, (6-1D-
+1R) 1L, 6 1D, etc. h 2U etc.
+
+??rewrite
+
+Level 9-04:??rot136
+
+NMBX
+
+XXXX.XXXX
+X..XXX..X
+X....0..X
+X..X.X..X
+XX.X.X1XX
+X..X=X..X
+X..*=*..X
+X..X=X.XX
+XXXX...X.
+...X.X2X.
+...X...X.
+...XXXXX.
+
+*L 1L 4U, 1 2U 1D, 0 2L. * 1L, 1 1U 1D, * 1D, 1 1U 1L, 2 7U, * 2U.
+
+2 1R 1U, 1 7R, * 2L. 4 boxes on the right and one in the critical left nice
+to push right at the end.
+
+(UL) 4D 3R, (UU) L 4D, (*-D) 2D, (*) 2L. 1 4D L, (0) 1R. (*-R) 1L 1U,
+(bottom) 2U. Left block 4U, *-L 1R, left block 4D R.
+
+??typos
+Level 9-05:
+
+NXB3
+
+              XXXX
+           XXXX..X
+          XX..X..X
+          X..0.1.X
+        XXX.X2...XXXX
+        X..3..XX4...X
+        X..X...5.X.6X
+        X..X......7.XXXX
+        XX.XXXX8XX.....X
+        X.9X=====X.X...X
+        X..a===*=.bX.XXX
+       XX..X=====X...X
+       X...XXX.XXXXXXX
+       X.cd..X..X
+       X..X.....X
+       XXXXXX...X
+            XXXXX
+
+Here is how to fill in the center:
+
+12b95
+...8<a
+34c76
+  2 below
+
+4 2U, 6 2D, 7 1L, 6 2R, b 1L, * U 3L. 8 2D 2L U. 7 2L, 5 L, 7 4D 3L. b 2U 3L
+4D 2L.
+
+6 3L U 3L 3D L 3D, 5 2R D L 3D 2R. 0 1L, 2 3D, a 2L, 9 3U, 3 2R. 2 2R 2D R. 3
+2D 2R 3D. 9 U 3R 2D 4R, c 1U, d 1R, c 1R 6U. a 2D R U. d 2L. (*) L 2D. The 3
+blocks on the left will go in the left, and you have 2 blocks on the bottom.
+
+(7-1L) 2L 4D R. 0 1R 4D 2R 4D. 4 1U, 1 2L 4D 2R 3D, 4 5D L 2D. (b-1L) 1L.
+Push 2 right blocks 3U. Others U 4R, 4D 3R and U R 2U 2R to the center for
+the win.
+
+Level 9-06:??152
+
+NsBM
+
+                 XXXXX
+            XXXXXX...X
+          XXX....=.0.X
+          X.1..X2=X3XX
+          X..X...=X..X
+          XX.XXXX=...X
+           X.4..X*XXXX
+           X.XX.X=..X
+           X.....=X.X
+           XXX5.....X
+             X..XXXXX
+             XXXX
+
+* 2D??
+1 2R, 5 1U, * 1D 3L, 5 2R. 0 4L, 3 2D 2L 3D.
+
+0 4R 3D 2L 2U, 2 U 3R 3D 2L U. 1 1U 5R 3D 2L. 4 1L 3U 2R U 3R. * 2U, next 1R
+1U, 5 U 3R.
+
+Level 9-07:??174
+
+NsDN
+
+       XXXXX
+       X...X
+       X.X.XXXXXX
+       X......0.XXXXXX
+       X.1.XX2.XXX...X
+       X.XXXX.3....4.X
+       X.XXXXX.X..X5.XXXX
+      XX..XXXX.XX6......X
+      X..7X..8..X.XX.XX.X
+      X.........X.X===X.X
+      XXXXXX..XXX..===..X
+           XXXX X.X===X.X
+                X.XXX.X.X
+                X.......X
+                XXXXXXXXX
+
+0 5L, 3 1U, 4 1R D* R D. 5 U R 5D 2L. 6 2U 3R 5D 2R.
+
+3 2D, 7 D 3R, 0 L 5D R, 2 U 4L, 8 R L, 3 2U D 6R 5D L U. 8 R 4U D R* 5D R U.
+7 U 2R 4U D R* D* L. Push the 3 block outside the dots 1 in. You now have a
+column for the last 3. 1 D 5R U R 4U D R* D*. The other blocks follow L D* 5R
+U R 4U D R* D*.
+
+??typo
+
+Level 9-08:??77
+
+NsHQ
+
+         XXXXXX  XXXXX
+         X....XXXX...X
+         X.0...1...X.X
+         XX..X.XXX.2.X
+          X34..XXX5X.X
+         XX...X..===.X
+         X..X.6..7===X
+         X..XXXXX==XXX
+         X..X   XXXX
+         XXXX
+
+Pretty straightforward but there is a detail or two.
+
+6 2R, 7 D, 6 R*. 5 D*. 1 R* D* R. 0 R* D*, 3 2U R* D* 2L, 4 2U R* D* R, 3 R,
+2 L D*.
+
+Level 9-09:??177
+
+NsMW
+
+             XXXX XXXX
+           XXX..X X..X
+        XXXX..0.XXX.1X
+        X.2...3......X
+      XXX..XX.4..5..6X
+      X.......X.7.XX.X
+      X.X89abX.cd.e..X
+      X....f.gh.XXXX.XXXXX
+      XXXX....i..XX.=====X
+       X..jkXX.XXXX.====XX
+       X.l..X====XX.==XXXX
+       X.X..m====XXXXXX
+       XXXX..====X
+          XXXXXXXX
+
+Another pretty easy level. It looks like a mess, but each side is pretty
+straightforward. Here is how to clear each set of pegs:
+
+.gfed
+.cba
+..
+
+1.32
+..54
+..76 < block to left before 5, fill row, fill chute
+
+c 3U, 6 5D R*, 1 7D R*, 5 3R 5D R*. e 2R 3D U R*, d 4R 3D U R*, 7 D 4R 3D U
+R*.
+
+i 3L, f 3L, 9 2U, 4 6R 5D U R. 0 1R, 3 1D R* D* R*. 3 R* D*. 0 1D R* D*. 2 R*
+D*, right side done.
+
+h 4D L U, m 4R U, j 3U, h 2L, i 3R 4D 2L, b 2D 2R 3D R U. h 3R 5D 2R. f 6R 5D
+R. a 2D 3R 3D 2R. m 1U 3R 3D 1R. l 2R D. (9) D 4R D*, 8 D 5R D*, 9 3D 4R D*,
+boxes 2R to win.
+
+ k 2D 4R U. i 4D 2L. g R 5D 2R. b 2D 2R 4D R. a 2D 3R 3D 2R.
+
+Level 9-10:??48
+
+NsX2
+
+           XXXXXXXXX
+           X...XX..X
+           X.X.0.1.X
+           X..*=X..X
+           XX.X=.=XX
+           XX2XXX*XXX
+           X........X
+           X...XX.X.X
+           XXXXXX...X
+                XXXXX
+
+UL* 1L, 0 1R. DR* 2D U 4L 5R.
+
+UL* R, 2 D, 1 D, 0 2L. 1 U L, DR* L 4U. 2 5R.
+
+UL * R, UL 1D, * 1D, * 1R. DR block 5L, then UR 5D.  Top one 2L and DL one
+2R. UL one down. DR block 3U onto one peg, and the other 2L 5R L U.
+
+(pushes box) Is that her?
+
+Level 10-01:!
+
+XXXXXXX.....
+X.====X.....
+X.====X.....
+X.====X.....
+XX0XXXXXXXXX
+X.1.2......X
+X...X.34.5.X
+XXX.X...X6.X
+..X.X.78...X
+..X.X.X.9a.X
+..X.X..b.XXX
+..X.XXX..X..
+..X....X.X..
+..XXXX...X..
+.....XXXXX..
+
+b 1L, 8 1U, 3 1D, 4 1L, 5 1L, 6 1U, 7 3R, 9 1U, 8 2D, (3) 1R 1D. b 2R. Now
+you just 2 2R, 1 2R, and get to work.
+
+0 2U 1D 3R. 1 2L 3U 1D 2R. 2 4L 3U 1D 1R. 3 2U 4L 3U 3R. (5) 1U 7L 3U 2R. (5-
+1L) 3L 1U 3L 3U 1R. (4-1D) 2U 5L U* R*. (8-1D) 1D, a 2L, (a-1U) 2U 7L 4U 2R.
+(9-1U) 1R 3U 7L 4U 1R. (9-2D) 2U 1R 3U 7L U*. (b) 1R, (9-1L) U* 5L 3U. b 2U
+1L 2U 5L U.
+
+Level 10-02:??182
+
+PDBQ
+
+        XXXXXXXXXXXXXXXXXX
+        X.......XX===X...X
+        X.X0X1X.XXX===.2.X
+        X...3..4...==X.5.X
+      XXXXX6X7X.X..==..XXX
+      X...8.9.X.XXXXXX.XX
+      X.X.X.X.X.........X
+      X.......XXXXXXX...X
+      XXXXXXXXX     XXXXX
+
+4 1D, 3 7R 2U L, 1 d 6R 2U, 0 D 9R 2U. 4 U L 5R D L. 6 2D, 8 2L, 7 U R* D R.
+5 L, 2 4L, 5 U L. 6 3U R* U. 4 1R, 7 1L. 9 R 2U R*. 8 R* 2U R*.
+
+??typo
+
+Level 10-03:
+
+PHBT
+
+.XXXX....
+.X..X....
+.X0.XXX..
+.X....X..
+XX.X=.XXX
+X..X*=1.X
+X.23==X.X
+XX.XX=..X
+.X.4..XXX
+.X..XXX..
+.X..X....
+.XXXX....
+
+2 3D, 4 1R, * 1U, 1 2L, 3 2R 2U, 0 4D 1R, 2 7U, 3 2D, 4 2L 1D, 3 2U, 0 2R 1D,
+3 1D, 2 4D 3R, 4 7U 4D 2R.
+
+Level 10-04:??183
+
+PMBY
+
+            XXXXXXXXX
+            X....===X
+            X.X..===X
+            X.XX..==X
+       XXXXXX.0.1.XXX
+       X===2.3.4.XX
+       X==X.5.6.7XXXXXXXX
+       X===X.8.9........X
+       X===.a.b..XcXdXX.X
+       X..XXXX.e.f.g.X..X
+       X..X XX..h...i...X
+       XXXX  XX...XXXXXXX
+              XXXXX
+
+1 2U 3R D. 4 1L, 9 1D, 8 1L, 3 2U, 7 4U 2R D. 0 2R 2U 3R. 4 2R 3U 2R. 6 2R 4U
+1R. e 1L, h U* 3R. a 3L U R. 2 5R 4U 2R. b 4U R 3U R. b 5L 2U. 5 1R 2D 4L 1U.
+3 3D 5L. 8 2U 3L. e 4U 4L. f 3L U L* U*. i 5L 2U L* U. g L* U L*. c 1D L* U
+L*. d 1U L* D L*.
+
+Level 10-05:??161
+
+PXB4
+
+           XXXXX
+           X...XXXXXX
+           X.X==*...X
+           X.===X...X
+          XX0XX.1.2.X
+          X...X3XXXXX
+          X...4...X
+          XXXXX.X.X
+              X...X
+              XXXXX
+
+3 2D, 4 2L, * 2R 4L D L. 3 U* 3R, 4 4R, 0 2D. 3 4L D. 4 L 4U 3R. 1 L 2U L. 2
+3L 3D 5U. 4 2L. 0 4R L 3U.
+
+Level 10-06:??163
+
+PsBN
+
+              XXXXXX
+            XXX....XX
+            X...XX..X
+          XXX0XX..X.X
+         XX.....==X.X
+         X..1X2X*=X.X
+         X.34..X=*X.XXX
+         X..56.X==X...X
+         XX....X==7...X
+          XXX8XX=.X.XXX
+            X..XXX..X
+            XX.....XX
+             XXXXXXX
+
+*(R) 1D, both * 1U, 7 2R 4L D, *(R) 2D 3R, * 1D. 2 U 3R 3D, 0 D L, *(R) 1D
+1L, *(U) 2D. 0 4R 2D. 6 D L, 5 2R 3U 2R D. 3 D 3R 3U 3R 3D. 4 2R 2U 3R 2D. 1
+U R* D. * 3L. 8 3U R 2U R*. 6 R 2U R 2U R*.
+
+??typo
+
+Level 10-07:??185
+
+PsDP
+
+      XXXXXXXXXXXX  XXXXXX
+      X...X....X.XXXX====X
+      X...01X.......=====X
+      X...X.XXX...XX.====X
+      XX.XX.XXX..X...====X
+       X.2.3.....X.XX.XXXX
+       X..4.5XX..X.......X
+      XXXX.X..XXXX.XX.XX.X
+      X..X.X6...XX.XX....X
+      X.7..8..X.XX.XXXXXXX
+      X.X.9.a....X.X
+      X..b.XX.XX.X.X
+      X.cd.....ef..X
+      XX.XX.XXX.g..X
+       X....X X....X
+       XXXXXX XXXXXX
+
+1 1D, 0 2L, 4 1R, 3 5R 3U 8R. 1 2D 5R 3U R* U R. 2 follows 3 but D R after
+R*. 8 1R, a 2R, 5 1U R* 3U R* 2D R. 4 1L 1U R* 3U R*. 8 1R, 6 3U R* 3U R* U
+R. 0 3R 3D R* 3U R* D R. 9 5U R* 3U R* 2D R.
+
+g 1L f 1D for later.
+
+c 1U, 7 2R U* R* 3U 5R 4D R 2L. a 4L 5U R* 3U 5R 5D. 8 1D 3L U* R* 3U 5R 2D
+2L.
+
+d 1R, b 2U R 4U R* 3U 6R 2D. c 1R 2U follows b btu 1U at the end. d 2L U 2R
+U* R* 3U 6R. 4U R for the bottom box below.
+
+e 7L U 2R U* R* 3U R* U. f 1U 8L follows e. g 1U follows f. (lower box) 2R L
+U*, last one 2R.
+
+Level 10-08:??169rot
+
+PsHR
+
+XXXXXXXXXX....
+X........XXXX.
+X.XXXXXX.X..XX
+X.X.0.1.2..3.X
+X.......X4...X
+XXX5..67X..XXX
+..X..XX.X.8XX.
+..XX9X...a..X.
+...X..b.c.XXX.
+...X.X...d..X.
+...X.XX...X.X.
+..XX..XXXXX.X.
+..X.........X.
+..X=======XXX.
+..X=======X...
+..XXXXXXXXX...
+
+a 2L, c 1D, d 1U, b 1R, c 2R, d 1D. a 1R, b 1D 1R. 9 3U, 7 3D, 2 1R, 6 2L, 9
+2R, 6 D* R*. 1 1R, 9 1D 2L D* R*. 1 1L, 5 1U 1R, 1 1R, 0 1R, 5 D* R*.
+
+0 1L, 1 1L, 7 4U. a 1L 1D 3L D* 2R. Clear the 3-column of boxes now. (d-1L)
+1U 4L D* R. (below it) 1U, (bottom) 3L 1U 3L D*. (middle) 1D 2L 1U 3L D* L D.
+1 column down. 7 4D 3L 4D 1R. Leave it there for later.
+
+2 1L, 4 5D 2L U 3L D* R*. 3 D 2L follows 4. 2 2R D L follows 3. 8 2U L 5D 2L
+U 2L. 1 4R D L 5D 2L U. 0 6R D L 5D 2L.
+
+8 L D* 2R. 7 1R. 1 3L D* L. 7 L D. 0 U 3L D*.
+
+Level 10-09:
+
+PsMX
+
+           XXXXXXXXXXXX
+           X..........XX
+           X..X.X01.2..X
+           X3.X4X..XX..X
+          XX.XX.X.5.X.XX
+          X...6.X7..X.X
+          X...X.8...X.X
+          XX.9.a...XX.X
+          X..X..XX..b.X
+          X....XX.cdX.X
+       XXXXXXef...X...X
+       X====X..XXXXXXXX
+       X=X===.XX
+       X====...X
+       X====...X
+       XXXXXXXXX
+
+First some small preparation for later. b 2L, d 1U, 0 1D. 3 3D R, e 3D 5L U.
+9 L 5U, f 1U, c 1R, b 2U, a 2L, f 1D 1L 3D 3L 2U 2L. 9 7D 2R 1D 1L 3D 3L 2U
+L. a L 5U 7D 2R 1D 1L 3D 3L 2U. 3 1D 1L 2D 2R 1D 1L 3D 2L 2U.
+
+6 2L 3U 7D 2R 1D 1L 3D 3L 1U. 4 4D 3L 2D 2R 1D 1L 3D 2L 1U. 8 1L 1D 3L 2D 2R
+1D 1L 3D 5L.
+
+d 1L, c 1U, d 1D, c 1L. 2 1R 7D. 1 1R. 5 1D. b 3L D 3L 2D 2R. 1 1L. 2 7U 1L.
+d 1R, c 1D, d 1U, c 1R. b 1D 1L 3D 4L. 5 1D 3L 1D follows b but without
+shuffling c/d. 7 1D follows 5.
+
+0 4D 5L 2D 2R 1D 1L 3D 1L 1U. 1 1L 5D 5L 2D 2R 1D 1L 4D 5L. 2 3L follows 1. d
+1L, c 1U, d 2U 3L 1D follows 2. c 1L 2U 3L 1D follows d.
+
+??cut
+
+Level 10-10:??190
+
+PsX3
+
+                XXXX
+        XXXXXXXXX..XX
+       XX..0......1.XXXXX
+       X...XX.XX...XX===X
+       X.X23.4.56X7XX===X
+       X.X.......X...===X
+       X..8X.XXX9a...===X
+       X.b..cd..e.XX====X
+       XXXf.......XXXXXXX
+         X..XXXXXXX
+         XXXX
+
+c 1D, d 1R, e 1R, 9 1D, a R* U*. e 1U 5R U*, 9 R U 4R 3U, d 3R U 4R 2U.
+
+6 2U, 7 2D 4R 3U. 1 4D 5R 2U. 5 R 3D R U 4R U 2L. (save for later) 4 3R 3D R
+U 6R U. 6 2R 4D R*. 2 1U, 3 R*, 8 1U. 3 3D R U 5R D R. 0 7R D* 3R D R. 2 1U
+8R 4D 4R. 8 3U 8R 4D 3R U R. b 8R U 4R D. 5 2R. f 1U R* U R*. c 2L 1U R* U R*
+D.
+
+??typo
+
+(pushes box past her) "That's Her."
+
+Level 11-01:
+
+QBBQ
+
+         XXXXXXXXXXXXX
+         X..0.1.2=*==X
+         X.3.4.5.*===X
+         X..6.7.8=*==X
+         X.9.a.b.*===X
+         X..c.d.e=*==X
+         X.f.g.h.*===X
+         X..i.j.k=*==X
+         X.l.m.n.*===X
+         X..o.p.q=*==X
+         X.r.s.t.*===X
+         XXXXXXXXXXXXX
+
+Let's call this 11x10 board a coordinate plane with (0,0) in the DL to make
+things simpler. Basically if you get
+
+xx
+x x
+
+Near an edge, you're toast. If you get one on a diagonal to the edge where
+you can't work from behind, that's it. Fortunately the start is pretty simple
+once you notice it. Then the rest is busy work. If you line it up right, say
+with
+
+   x
+  x.x
+ x.x.x
+x.x.x.x
+
+Then you can sweep a lot of boxes right at once. There is some problem
+keeping 4 to a row--and you have to shuffle--but once things fall into place,
+you'll see it.
+
+Go to the UL and push D, D, D, R, R, R, 2R. (8,4) 2R (8,5) 1D (7,5) 3R (8,7)
+1D. Now 6,7 7,8 8,9 R*, then 4,7 5,8 6,9, then 3,8 4,9 then 2,9.
+
+(6,6) 2U R, 7,6 and 8,6 U. 8,4 2U 2R. 1,7 5R 1D 3R. 1,6 1U 2,6 R*. 1,6 D R*.
+That's four rows. 8,1 7,2 6,3 5,4 1U, 4,5 2U 1D. Push them all 1R 1D in
+order, then R*. 1,4 1U, 3,4 R*, 1,4 1D, 2,4 1D, 3,4 1,4 2,3 R*.
+
+The rest is easy--sweep the diagonals to the right.
+
+??easier solution
+
+Level 11-02:
+
+QD4H
+
+........XXXXXXXXXXX..
+........X...X.....X..
+.XXXXX..X.....0.1.X..
+.X...XXXXX.2XX.X.XX..
+.X.3.XX...X.XX.4..X..
+.X.5...67.X.XX89a.X..
+.XX.XXX...X.XX....X..
+.XX.X...XXX.XXXXXbX..
+XXX.X.....c..X====X..
+X...XXX.XX.d.X====XXX
+X.ef...g.X...X==.=.XX
+X...XX.h.X..XX====.XX
+XXXXXX...XXXXXX===XXX
+.....XXXXX....XXXXX..
+
+I won't give instructions by the dots. The way to fill in the dots: left
+column, next-left, then
+
+15
+26
+ 7
+38
+49
+
+5 1R, f 1U, g 1L, c 1R 5L R D, d 1D 1L, 2 1U 7D 1U 5L, 0 4L 1R 7D, 1 6L.
+
+b 1D. 8 3U R, a 3U. 9 2R 3D, a 4D R D, 8 R 4D R D, 4 R 2D R D. 1 6R 4D R D. d
+7U 5R 4D R 4D 2L. 2 5R 6U 5R 4D R D.
+
+Now to get rid o2 the stuff in the loop. 6 3D 4R etc., d 2U R etc., 7 1L 3D
+etc., 5 1L 5R D L 2D etc. 3 1D 5R etc. f 1D 1U, g 1R 1L, 2 4U 3D etc., h 6U
+5D etc., f 1U 1D, g 1R 5U 4D etc., f 1U, e 5R 5U 4D etc., f 1D 5R 5U 4D etc.
+
+Finally, d 2U 4L 5R etc.
+
+Level 11-03:??240
+
+QH4K
+
+            XXXXXXXXXXXX
+           XX==....X...X
+          XX==*.0....1.X
+         XX==*=X.X.X2.XX
+         X==*=X.X.X.3..X
+      XXXX===X..X....X.X
+      X..XX.X..........X
+      X..4.5.XXX..X.X.XX
+      X.6...7...X.X...X
+      XXX89...X.X.X.X.X
+        X...a...X.X.XXXXX
+        X.bX.XXXXX......X
+        Xc...X   X...X..X
+        X..XXX   XX.....X
+        X..X      X....XX
+        XXXX      XXXXXX
+
+6 2R, 8 1D, 9 2R, 7 2R, a 1L, b 1U, c 1D, 8 1D, b 1D, a 1L, 9 1R, 6 2R, 4 1L,
+5 1L. That sets up the DL.
+
+*'s 1L, 0 1L, 1 4L, 3 1R, 2 U 4D L 6D R U R. 1 4R L 4D L 6D R D 2R U. 0 6R L
+4D L 6D R D R. *'s 1R, top 7R L 4D L 6D R. *'s 1U 1R, top 7R L 4D 3L. * 1U 8R
+D. The other * can go to the DR.
+
+(9-1U) 4U R U R U 8R L 4D. (4-1R) R 3U R U R U 8R L 3D. (4-1L 3R 3U R U R U
+8R. (7-2R) 3L 4U R U R U 4R. (7-1R1D) U 2L 4U R U R U 2R. (b-1L) 4U 2R 3U R U
+R U. c 6U 2R 3U R U. (b-1U) L, (b) 4U R 3U L. (last) 2U 2R 3U. *'s 1D 1L then
+2D and 1D to cover the bottom.
+
+Now unwind the others: 8L D L D L. 3-1R 1L, 1-1D 1U L*- D 2L. Top block 1R,
+block 2D 1L, tthen another 3U 7L 2D. Top 1L 2U 7L 1D 1L 1D. 2 blocks now, rt
+1D, lf 2R, rt 2U 1R, lf 1L, rt 3U 7L 1D 1L. lf 1U 1R 3U 8L. Ul 2L.
+
+From the bottom, bring one block up and go L* D. Push the UL 2L, another
+bottom block L* at the top, the next L* D, the next L* and finally the top
+block 3L.
+
+Level 11-04:??199
+
+QM4P
+
+      XXXXX
+      X...XX
+      X.0..XXXXXXXXX
+      XX.X.X.......XXXXXX
+      XX.X...1X2X...X...X
+      X..X......3.X...4.X
+      X..XXX.XXXXXXXXX.XX
+      X..XX.==*=====.X.XX
+      XX.XX.*=*==*=*.X.XX
+      X.5XXXXXXXXXX.XX6.X
+      X..7...8..9....a..X
+      X..X...X...X...X..X
+      XXXXXXXXXXXXXXXXXXX
+
+Juggle a few boxes for a while and it all falls out.
+
+Push the 2nd-left box right, the right one left, and the DL right to make a
+row of 4. 3 5L. 4 1L, 6 1D 1U, a 2L 2R, 9 L 4R 2L, * L.
+
+0 1R, 5 D 7U, 7 2R 3L. 8 2R 6L, 9 2R 8L. * L 3U.
+
+4 1R 1L. 6 1D 1U. a 6L. 4 1R 1L. 6 1D 3L 3U 6L.
+
+4 5D 3L 3U 5L. a 4R 3U 4L. 8 8R 3U 3L. * 4D 2R, 3 R 3D R, 1 D L 3D, 2 D 3L
+3D.
+
+0 1L 1R, 5 3D, 7 2U, 8 10R 3U 2L. (0 1L 1R) 7 2D 11R 3U L. 5 4D 11R 3U, 0 1L
+8D 11R 2U.
+
+Level 11-05:??rot93
+
+QX4Z
+
+.XXXX.......
+.X..XXXXXX..
+.X.....0.X..
+XX.XX=XX1X..
+X..X.=.X.XXX
+X...*==X...X
+XX.X.=.2.X.X
+XX.XX=X..3.X
+X..XX=X.XXXX
+X.45.6X..X..
+X..X.....X..
+XXXXXXX..X..
+......XXXX..
+
+1 3D, 3 2L, 1 1D, 2 2L, * 1R. 0 5L 3D R.
+
+*'s 1R. 0 2R 2U. 3 3D, 1 1R, 3 1U, 6 5U, 2 1L 2D. 3 D 3U 2L D.
+
+4 5U D 3R. 5 L 4U 2R. 1 2L 3D 4U 2L.
+
+??typo--3 2U not 4 2U
+
+Level 11-06:??186
+
+Qs4D
+
+           XXXXXXXXX
+           X...X...X
+           X.01234.X
+          XX.5.6.7.X
+          X.8......X
+          X.9.XXXX.XX
+          X..X=====.X
+          XX..=====.X
+           XXXXXXXXXX
+
+Juggle the boxes so you have a loop getting you 1R of the top row before you
+drop everything on the bottom. Once the first box goes, the rest is easy.
+
+8 1R, 1 2D, 3 2D, 7 1R 1U. 6 2R, 7 4D 4L. 4 1R 4D 3L. 6 1R 3D 2L. 3 2R 2D 1L.
+2 3R 5D 4L. 0 5R 5D 3L. 5 5R 4D 2L. 9 1U, 8 1U, 1 4R 3D L. 9 1U 6R 3D. 8 5R
+3D.
+
+Level 11-07:
+
+Qs5G
+
+......XXX.....
+.XXXXXX.XXXXX.
+.X==========X.
+XX=********=XX
+X==*======*==X
+X==*=****=*==X
+XXXXXX==XXXXXX
+.X..........X.
+.X.0.1234.5.X.
+.X678....9abX.
+.X...cdef...X.
+.Xg.h....i.jX.
+XX...klmn...XX
+X.opq....rst.X
+X.....X......X
+XXXXXXXXXXXXXX
+
+We use coordinates for the top.
+(9,0) 1L, (4/6/8,2) 1D, (2,0) 1R, (3,2) 1D. (5,2) (7,2) (9,2) 1L. (9,1) 1U.
+(8,1) 2R D L R. (8,2) 1D 3R. (9,2) 2D. (6,1) 4R 1D. Top ones 2R each, then 1U
+1L 2D 1L. Push the top ones 3L 2D, 4L 2D, 7L 1D 1L.
+
+Now your next big choice is which block to push left. The left is
+asymmetrical, so it DOES make a difference. (Right one) 2D, other 2U 4L D.
+
+8 1D, 2 5U 3L D L. 1 R 5U 5R D. 0 3R 5U 4R D. 4 1U, 3 1L 5U 3R D. (4-1U-1L)
+3U 3R.
+
+You should see how to fill in the rest. Take care of the back row, getting
+the center bits last. Same goes for the next-back row. Here's how to push the
+squares.  (4-1U) 1L 1U, 5 3L 2U, a 2D, i 1D, n 1D, l 1D, k 1L, m 1L. p 1U, h
+1L, s 1U.
+
+Everything is in place now for a pretty quick wrap up. d/e to the top, 9 3L
+U*, c 3U R 1U, 8-1D 3U 2R 1U, f 2L U*, n U* 2L U*, (l) 1R U*-1. Bring the
+bottom blocks(5) up the right side, except the last which goes left. h-1D and
+i-1D go up and to the center and up and left. The 2 bottoms up the left. Then
+the ones not on the edge U R(or L) U the left chute. The others go 2D/4D,
+center and up.
+
+Level 11-08:
+
+Qs7J
+
+XXXXXXXXX
+X.0.==..X
+X.12==.3XX
+X.4.==.5.X
+XXXXXX...X
+     XXXXX
+
+A bit of an anticlimax for the final level...
+
+4 3R, 0 2R, 2 1D 1L, 4 1L. 5 1L 1U, 3 1D, 5 1L 1U. 3 1L 1U, 2 3R 1L, 3 2L, 2
+1U 1L. (4) 3R, (1) D 2R.
+
+He presents a heart, a heart floats on top of her, and she kisses him. You
+win!
+
+Sample level(QsX4): If you are curious, see my solution to level 200 in my
+TurboGrafx-16 Boxyboy FAQ.
+
+End of FAQ Proper
+
+================================
+
+  5. VERSIONS/CREDITS
+
+1.0.0: sent to GameFAQs 4/13/2008, complete but needs proofreading. Still,
+lots of levels were proofs of the TG16 version, so this is solid.
+
+Thanks to GameFAQs for being, well, THERE.
+Thanks to the usual GameFAQs gang, current and emeritus. They know who they
+are, and you should, too, because they get/got some SERIOUS writing done.
+Good people too--bloomer, falsehead, Sashanan, Masters, Retro, Snow
+Dragon/Brui5ed Ego, ZoopSoul, War Doc, Brian Sulpher, AdamL, odino, JDog,
+Lagoona, Da Hui and others I forgot. OK, even Hydrophant in his current not-
+yet-banned message board incarnation. I am not part of his gang, but I want
+him to be part of mine.
+Thanks to odino for pointing me to this game.
+Thanks to Sean Shannon for his Genesis FAQ. I did not use any of his
+information directly; however, his text maps were useful in comparing this
+version to the TurboGrafx-16 version.
+Thanks to the sokoban solver for being cool. I think it probably helped with
+some of these levels when I played the TG16 version. The link, again:
+http://codecola.net/sps/index.php
+Restore Page
