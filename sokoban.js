@@ -20,13 +20,24 @@ export function solved({crates, dests}){
   return _.eq(ordered(crates), dests);
 }
 
-function solvable({crates, dests}){
-  return _.count(crates) === _.count(dests);
+function unsolvable(self){
+  const crates =_.count(self.crates),
+        dests = _.count(self.dests);
+  return crates < dests ? new UnsolvableLevelError(crates, dests) : null;
 }
 
+function UnsolvableLevelError(crates, dests){
+  this.crates = crates;
+  this.dests = dests;
+  this.message = `This map has fewer crates (${crates}) than destinations (${dests}).`
+}
+
+UnsolvableLevelError.prototype = new Error();
+
 export function verify(state){
-  if (!solvable(state)) {
-    throw new Error("This map has a destinations to crates mismatch.");
+  const error = unsolvable(state);
+  if (error) {
+    throw error;
   }
   return state;
 }

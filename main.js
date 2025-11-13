@@ -143,7 +143,7 @@ function go(how){
   }
 }
 
-const unsub = $.does(
+const unsub = _.does(
   $.sub($keys, which(["ArrowUp"]), go("up")),
   $.sub($keys, which(["ArrowDown"]), go("down")),
   $.sub($keys, which(["ArrowLeft"]), go("left")),
